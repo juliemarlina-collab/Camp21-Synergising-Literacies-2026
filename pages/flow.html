@@ -1,35 +1,192 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Programme Flow · Camp21 Command Hub</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Programme Flow · Camp21</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/camp21-theme.css"></head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/camp21-theme.css">
+<style>
+.day-tab-bar{display:flex;gap:8px;margin-bottom:20px;overflow-x:auto;padding-bottom:4px}
+.day-tab{padding:10px 18px;border-radius:30px;border:2px solid #ddd;background:#fff;font-weight:600;font-size:13px;cursor:pointer;white-space:nowrap;transition:.15s}
+.day-tab.active{background:#1a2744;color:#fff;border-color:#1a2744}
+.day-panel{display:none}.day-panel.active{display:block}
+.day-header{background:linear-gradient(135deg,#1a2744,#2d4a8a);color:#fff;border-radius:16px;padding:20px 22px;margin-bottom:16px}
+.day-header .day-label{font-size:11px;font-weight:700;letter-spacing:2px;opacity:.7;margin-bottom:4px}
+.day-header h2{font-size:20px;font-weight:800;margin:0 0 4px}
+.day-header .theme{font-size:13px;opacity:.8}
+.day-header.arrival{background:linear-gradient(135deg,#2d6a4f,#40916c)}
+.day-header.day1{background:linear-gradient(135deg,#1a2744,#2d4a8a)}
+.day-header.day2{background:linear-gradient(135deg,#7b2d8b,#9c4dca)}
+.day-header.day3{background:linear-gradient(135deg,#c05621,#e07340)}
+.day-header.day4{background:linear-gradient(135deg,#b7292a,#d94f4f)}
+.arrival-note{background:#e8f5e9;border-radius:12px;padding:16px;color:#2e7d32;font-size:14px}
+.schedule-table{width:100%;border-collapse:collapse}
+.schedule-table th{background:#f5f5f5;padding:10px 14px;text-align:left;font-size:12px;font-weight:700;color:#666;letter-spacing:.5px;text-transform:uppercase}
+.schedule-table td{padding:12px 14px;border-bottom:1px solid #f0f0f0;font-size:13px;vertical-align:top}
+.schedule-table tr:last-child td{border-bottom:none}
+.time-cell{white-space:nowrap;font-weight:600;color:#1a2744;min-width:120px}
+.prog-cell{color:#333;font-weight:500}
+.venue-cell{color:#888;font-size:12px}
+.highlight-row{background:#fff8e8}
+.highlight-row .prog-cell{font-weight:700;color:#c8922a}
+</style>
+</head>
 <body><div class="layout">
 <div class="overlay" onclick="closeSidebar()"></div>
 <aside class="sidebar">
   <div class="brand"><div class="brand-row"><div class="brand-mark">✦</div><div><div class="brand-title">Camp21 Command Hub</div><div class="brand-sub">Synergising Literacies 2026</div></div></div></div>
   <div class="nav-section"><div class="nav-label">Command</div>
     <a class="nav-link" href="../index.html"><span class="nav-icon">🏠</span>Home</a>
-    <a class="nav-link" href="../pages/updates.html"><span class="nav-icon">📣</span>Activity Updates<span class="nav-badge">Live</span></a>
-    <a class="nav-link" href="../pages/flow.html"><span class="nav-icon">📅</span>Programme Flow</a>
+    <a class="nav-link" href="updates.html"><span class="nav-icon">📣</span>Activity Updates<span class="nav-badge">Live</span></a>
+    <a class="nav-link active" href="flow.html"><span class="nav-icon">📅</span>Programme Flow</a>
   </div>
   <div class="nav-section"><div class="nav-label">Training</div>
-    <a class="nav-link" href="../pages/trainers.html"><span class="nav-icon">👩‍🏫</span>Training Team</a>
-    <a class="nav-link" href="../pages/groups.html"><span class="nav-icon">👥</span>Group Board</a>
-    <a class="nav-link" href="../pages/dt-journey.html"><span class="nav-icon">🧠</span>DT Journey</a>
-    <a class="nav-link" href="../pages/gallery-walk.html"><span class="nav-icon">🖼️</span>Gallery Walk</a>
+    <a class="nav-link" href="trainers.html"><span class="nav-icon">👩‍🏫</span>Training Team</a>
+    <a class="nav-link" href="groups.html"><span class="nav-icon">👥</span>Group Board</a>
+    <a class="nav-link" href="dt-journey.html"><span class="nav-icon">🧠</span>DT Journey</a>
+    <a class="nav-link" href="gallery-walk.html"><span class="nav-icon">🖼️</span>Gallery Walk</a>
   </div>
   <div class="nav-section"><div class="nav-label">Evaluation</div>
-    <a class="nav-link" href="../pages/judges.html"><span class="nav-icon">⚖️</span>Judge Portal</a>
-    <a class="nav-link" href="../pages/pitch.html"><span class="nav-icon">🎤</span>Pitch Guide</a>
-    <a class="nav-link" href="../pages/evidence.html"><span class="nav-icon">📦</span>Evidence Board</a>
+    <a class="nav-link" href="judges.html"><span class="nav-icon">⚖️</span>Judge Portal</a>
+    <a class="nav-link" href="pitch.html"><span class="nav-icon">🎤</span>Pitch Guide</a>
+    <a class="nav-link" href="evidence.html"><span class="nav-icon">📦</span>Evidence Board</a>
   </div>
   <div class="nav-section"><div class="nav-label">Support</div>
-    <a class="nav-link" href="../pages/resources.html"><span class="nav-icon">🔗</span>Resources</a>
-    <a class="nav-link" href="../pages/logistics.html"><span class="nav-icon">🚌</span>Travel & Stay</a>
+    <a class="nav-link" href="resources.html"><span class="nav-icon">🔗</span>Resources</a>
+    <a class="nav-link" href="logistics.html"><span class="nav-icon">🚌</span>Travel & Stay</a>
   </div>
   <div class="sidebar-footer">AI-Powered Design Thinking for Sustainable Cultural Heritage<br/>Kompleks Kraf KL · 13–16 July 2026</div>
-</aside><main class="main">
-  <div class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="hamburger" onclick="toggleSidebar()">☰</button><div class="breadcrumb">Camp21 <span>/ Programme Flow</span></div></div><div class="top-actions"><div class="top-pill"><span class="dot dot-live"></span>Live Hub</div><div class="top-pill"><span class="dot dot-orange"></span><span data-countdown>--</span></div></div></div>
-  <div class="page-wrap"><div class="section-head"><div class="section-kicker">13–16 July 2026</div><div class="section-title">Programme Flow + Trainer Action</div><div class="section-sub">Operational flow for trainers, students and secretariat. Each time block should include a clear trainer action.</div></div><div class="card"><div class="card-title">Day-by-Day DT Flow</div><div class="table-wrap"><table class="table"><tr><th>Day</th><th>Focus</th><th>SMART DT Output</th><th>Trainer Action</th></tr><tr><td><span class="pill pill-teal">Day 1</span></td><td>Heritage immersion, Empathy and Define</td><td>T01–T06</td><td>Ensure interviews, evidence, empathy map, POV and HMW are completed.</td></tr><tr><td><span class="pill pill-orange">Day 2</span></td><td>Ideation, motif exploration, mind mapping</td><td>T07–T10</td><td>Guide brainstorming, SCAMPER and final idea selection.</td></tr><tr><td><span class="pill pill-gold">Day 3</span></td><td>Prototype, peer testing, pitch preparation</td><td>T11–T16 + deck</td><td>Check prototype evidence, feedback, improvements and pitch readiness.</td></tr><tr><td><span class="pill pill-maroon">Day 4</span></td><td>Gallery walk, pitching, judging</td><td>Final pitch + evidence</td><td>Manage timing, Q&A, judging flow and final documentation.</td></tr></table></div></div><div class="notice notice-teal">Add actual venue, movement timing, prayer breaks and transport instructions once confirmed by organiser.</div></div>
-</main></div><script src="../js/camp21-data.js"></script><script src="../js/camp21-main.js"></script></body></html>
+</aside>
+<main class="main">
+  <div class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="hamburger" onclick="toggleSidebar()">☰</button><div class="breadcrumb">Camp21 <span>/ Programme Flow</span></div></div><div class="top-actions"><div class="top-pill"><span class="dot dot-live"></span>Live Hub</div></div></div>
+  <div class="page-wrap">
+    <div class="section-head"><div class="section-kicker">Official Timetable</div><div class="section-title">Programme Flow</div><div class="section-sub">13–16 July 2026 · Kompleks Kraf Kuala Lumpur</div></div>
+
+    <div class="day-tab-bar">
+      <button class="day-tab active" onclick="showDay('arrival')">12 Jul · Arrival</button>
+      <button class="day-tab" onclick="showDay('day1')">13 Jul · Day 1</button>
+      <button class="day-tab" onclick="showDay('day2')">14 Jul · Day 2</button>
+      <button class="day-tab" onclick="showDay('day3')">15 Jul · Day 3</button>
+      <button class="day-tab" onclick="showDay('day4')">16 Jul · Day 4</button>
+    </div>
+
+    <div id="arrival" class="day-panel active">
+      <div class="day-header arrival">
+        <div class="day-label">12 JULY 2026 · SUNDAY</div>
+        <h2>Arrival Day</h2>
+        <div class="theme">Participants, lecturers, facilitators & speakers check in</div>
+      </div>
+      <div class="arrival-note">🏨 Participants, accompanying lecturers, facilitators and speakers arrive at their respective accommodations. The programme officially begins on Monday 13 July at 7:00 am with pick-up service from designated points.</div>
+    </div>
+
+    <div id="day1" class="day-panel">
+      <div class="day-header day1">
+        <div class="day-label">13 JULY 2026 · MONDAY</div>
+        <h2>Day 1 — Heritage Immersion</h2>
+        <div class="theme">Empathize DT + KL Exploration</div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table class="schedule-table">
+          <thead><tr><th>Time</th><th>Programme</th><th>Venue</th></tr></thead>
+          <tbody>
+            <tr><td class="time-cell">7:00 am</td><td class="prog-cell">Pick up Participants</td><td class="venue-cell">Pick up points</td></tr>
+            <tr><td class="time-cell">8:30 – 9:00 am</td><td class="prog-cell">Registration & Breakfast</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">9:00 – 9:30 am</td><td class="prog-cell">Programme Briefing / Smart Green Briefing</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">9:30 – 10:00 am</td><td class="prog-cell">Ice Breaking & Group Formation</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr class="highlight-row"><td class="time-cell">10:00 am – 12:30 pm</td><td class="prog-cell">Guided Craft Gallery Tour / Motif Exploration & Artisan Interview</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">12:30 – 2:00 pm</td><td class="prog-cell">Lunch / Zohor Prayer</td><td class="venue-cell">Hall & Surau</td></tr>
+            <tr class="highlight-row"><td class="time-cell">3:30 – 5:00 pm</td><td class="prog-cell">Design Thinking Workshop: Empathize & Define</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">5:00 – 5:30 pm</td><td class="prog-cell">Day 1 Reflection & Asar Prayer</td><td class="venue-cell">Hall & Surau</td></tr>
+            <tr><td class="time-cell">5:30 – 7:00 pm</td><td class="prog-cell">Dinner / Maghrib Prayer</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr class="highlight-row"><td class="time-cell">8:30 – 10:30 pm</td><td class="prog-cell">KL Exploration — Hop-On Hop-Off Bus & Reflection</td><td class="venue-cell">Around Kuala Lumpur</td></tr>
+            <tr><td class="time-cell">10:30 pm</td><td class="prog-cell">Sending off Participants</td><td class="venue-cell">Kompleks Kraf</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="day2" class="day-panel">
+      <div class="day-header day2">
+        <div class="day-label">14 JULY 2026 · TUESDAY</div>
+        <h2>Day 2 — Ideate</h2>
+        <div class="theme">Mind mapping, concept sketching & artisan interviews</div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table class="schedule-table">
+          <thead><tr><th>Time</th><th>Programme</th><th>Venue</th></tr></thead>
+          <tbody>
+            <tr><td class="time-cell">7:00 am</td><td class="prog-cell">Pick up Participants</td><td class="venue-cell">Pick up points</td></tr>
+            <tr><td class="time-cell">8:30 – 9:00 am</td><td class="prog-cell">Breakfast</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr class="highlight-row"><td class="time-cell">9:00 – 10:30 am</td><td class="prog-cell">Design Thinking Workshop: Ideate</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">10:30 am – 12:00 pm</td><td class="prog-cell">Motif Exploration & Artisan Interview</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">12:00 – 1:30 pm</td><td class="prog-cell">Lunch / Zohor Prayer</td><td class="venue-cell">Hall & Surau</td></tr>
+            <tr class="highlight-row"><td class="time-cell">1:30 – 2:30 pm</td><td class="prog-cell">Mind Mapping & Concept Sketching</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">2:30 – 3:30 pm</td><td class="prog-cell">Group Reflection</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">7:30 – 8:30 pm</td><td class="prog-cell">Dinner & Maghrib Prayer</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">8:30 – 10:30 pm</td><td class="prog-cell">Discussion</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">10:30 pm</td><td class="prog-cell">Sending off Participants</td><td class="venue-cell">Kompleks Kraf</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="day3" class="day-panel">
+      <div class="day-header day3">
+        <div class="day-label">15 JULY 2026 · WEDNESDAY</div>
+        <h2>Day 3 — Prototyping & Pitch Prep</h2>
+        <div class="theme">Tie Dye Workshop + Pitch & Storytelling Preparation</div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table class="schedule-table">
+          <thead><tr><th>Time</th><th>Programme</th><th>Venue</th></tr></thead>
+          <tbody>
+            <tr><td class="time-cell">7:00 am</td><td class="prog-cell">Pick up Participants</td><td class="venue-cell">Pick Up Points</td></tr>
+            <tr><td class="time-cell">8:30 – 9:00 am</td><td class="prog-cell">Breakfast</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr class="highlight-row"><td class="time-cell">9:00 – 11:00 am</td><td class="prog-cell">Prototyping Workshop</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr class="highlight-row"><td class="time-cell">11:00 am – 12:30 pm</td><td class="prog-cell">Tie Dye Workshop</td><td class="venue-cell">Craft Area</td></tr>
+            <tr><td class="time-cell">12:30 – 1:30 pm</td><td class="prog-cell">Lunch / Zohor Prayer</td><td class="venue-cell">Surau</td></tr>
+            <tr class="highlight-row"><td class="time-cell">1:30 – 3:30 pm</td><td class="prog-cell">Pitch & Storytelling Preparation</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">3:30 – 5:00 pm</td><td class="prog-cell">Closing Rehearsal</td><td class="venue-cell">Laman Wau</td></tr>
+            <tr><td class="time-cell">5:30 – 8:30 pm</td><td class="prog-cell">Dinner / Maghrib Prayer</td><td class="venue-cell">Main Seminar Hall & Surau</td></tr>
+            <tr><td class="time-cell">8:30 – 10:30 pm</td><td class="prog-cell">Discussion</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr><td class="time-cell">10:30 pm</td><td class="prog-cell">Sending off Participants</td><td class="venue-cell">Kompleks Kraf</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="day4" class="day-panel">
+      <div class="day-header day4">
+        <div class="day-label">16 JULY 2026 · THURSDAY</div>
+        <h2>Day 4 — Pitching & Closing Ceremony</h2>
+        <div class="theme">Laman Wau · Attire: Batik</div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table class="schedule-table">
+          <thead><tr><th>Time</th><th>Programme</th><th>Venue</th></tr></thead>
+          <tbody>
+            <tr><td class="time-cell">7:00 am</td><td class="prog-cell">Pick up Participants</td><td class="venue-cell">Pick Up Points</td></tr>
+            <tr><td class="time-cell">8:30 – 9:00 am</td><td class="prog-cell">Breakfast</td><td class="venue-cell">Main Seminar Hall</td></tr>
+            <tr class="highlight-row"><td class="time-cell">9:00 – 11:30 am</td><td class="prog-cell">⭐ Pitching & Evaluation Session</td><td class="venue-cell">Laman Wau</td></tr>
+            <tr class="highlight-row"><td class="time-cell">11:30 am – 12:30 pm</td><td class="prog-cell">Panel Feedback</td><td class="venue-cell">Laman Wau</td></tr>
+            <tr><td class="time-cell">12:30 – 1:30 pm</td><td class="prog-cell">Lunch Break</td><td class="venue-cell">Laman Wau</td></tr>
+            <tr><td class="time-cell">1:30 – 2:30 pm</td><td class="prog-cell">Zohor Prayer</td><td class="venue-cell">Surau</td></tr>
+            <tr class="highlight-row"><td class="time-cell">2:30 – 4:00 pm</td><td class="prog-cell">🏆 Closing Ceremony & Prize Giving</td><td class="venue-cell">Laman Wau</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notice notice-orange" style="margin-top:16px">👘 <strong>Batik attire</strong> required for Day 4 (Closing Ceremony). Don't forget outerwear for Hop on Hop Off night activity on Day 1.</div>
+    </div>
+
+  </div>
+</main>
+</div>
+<script src="../js/camp21-data.js"></script>
+<script src="../js/camp21-main.js"></script>
+<script>
+function showDay(id) {
+  document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
+</body></html>
