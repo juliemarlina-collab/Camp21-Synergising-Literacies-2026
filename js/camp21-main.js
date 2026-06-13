@@ -25,9 +25,38 @@
     const wrap=$('[data-phases]'); if(!wrap) return;
     wrap.innerHTML = CAMP21.phases.map((p,i)=>`<div class="step"><div class="step-icon s${i+1}">${p.icon}</div><b>${p.no} · ${p.title}</b><span>${p.desc}</span></div>`).join('');
   }
+
+  function renderLegacyUpdates(){
+    const box=document.querySelector('[data-render="updates"]'); if(!box || !window.CAMP21) return;
+    box.innerHTML = CAMP21.updates.map(u=>`<div class="update-item"><div class="update-time">${u.time}</div><div><div class="update-text"><strong>${u.title}</strong><br>${u.detail}</div></div><div class="update-pic">Camp21</div></div>`).join('');
+  }
+  function renderCountdown(){
+    const el=document.querySelector('[data-countdown]'); if(!el || !window.CAMP21) return;
+    el.textContent = CAMP21.event?.dates || '13–16 July 2026';
+  }
+  window.toggleSidebar = function(){
+    const side=document.querySelector('.sidebar');
+    const overlay=document.querySelector('.overlay');
+    if(side) side.classList.toggle('open');
+    if(overlay) overlay.classList.toggle('show');
+  };
+  window.closeSidebar = function(){
+    const side=document.querySelector('.sidebar');
+    const overlay=document.querySelector('.overlay');
+    if(side) side.classList.remove('open');
+    if(overlay) overlay.classList.remove('show');
+  };
+  function setActiveLink(){
+    const current=location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('a[href]').forEach(a=>{
+      const href=a.getAttribute('href').split('/').pop();
+      if(href===current) a.classList.add('active');
+    });
+  }
+
   function mobileNav(){
     const btn=$('.menu-btn'), links=$('.nav-links'); if(!btn||!links)return;
     btn.addEventListener('click',()=>{links.style.display=links.style.display==='flex'?'none':'flex';links.style.position='absolute';links.style.left='12px';links.style.right='12px';links.style.top='74px';links.style.background='rgba(6,26,61,.98)';links.style.padding='14px';links.style.borderRadius='18px';links.style.flexDirection='column';links.style.alignItems='stretch';});
   }
-  renderLiveUpdates(); renderExperiences(); renderGroups(); renderTrainers(); renderPhases(); mobileNav();
+  renderLiveUpdates(); renderExperiences(); renderGroups(); renderTrainers(); renderPhases(); renderLegacyUpdates(); renderCountdown(); setActiveLink(); mobileNav();
 })();
