@@ -1,24 +1,26 @@
-# Camp21 Programme Command Hub
+# Camp21 Heritage Command Hub
 
-Separated static website structure using the Malaysian arts + AI + Design Thinking + tourism theme.
+Theme: Camp21: Synergising Literacies 2026  
+Subtitle: AI-Powered Design Thinking for Sustainable Cultural Heritage  
+Visual direction: Malaysian heritage, craft tourism, Kompleks Kraf KL, AI + Design Thinking.
 
 ## Structure
-- `index.html` main landing page
-- `pages/` separate pages for trainers, groups, DT journey, gallery walk, judges, pitch, updates, evidence, resources and logistics
-- `css/camp21-theme.css` visual theme
-- `js/camp21-data.js` data layer designed for future Google Sheets connection
-- `js/camp21-main.js` shared rendering/navigation script
-- `assets/img/` motif SVG backgrounds
+- `index.html` — strong landing page
+- `pages/` — separated pages by function
+- `css/camp21-heritage.css` — main design system
+- `js/camp21-data.js` — editable programme data
+- `js/camp21-main.js` — rendering and interactivity
+- `assets/` — motifs, icons and placeholder illustrations
 
-## Recommended Google Sheets tabs later
-1. Groups
-2. Trainers
-3. Phase_Trainers
-4. Activity_Updates
-5. Evidence_Board
-6. Judge_Scores
-7. Resources
-8. Contacts
+## Suggested Google Sheet Tabs for Later Connection
+- Activity_Updates
+- Groups
+- Trainers
+- Phase_Trainers
+- Judge_Scores
+- Evidence_Board
+- Resources
+- Contacts
 
-## Next actions
-Replace placeholder links in `js/camp21-data.js` for SMART DT App, Judge Score Form, Activity Update Form and Drive Evidence Folder.
+## Notes
+The visuals are placeholder SVG illustrations so the site can run offline. Replace with actual photos of Kompleks Kraf KL, batik, songket, wau, ukiran, gallery walk and SMART DT App QR when ready.
