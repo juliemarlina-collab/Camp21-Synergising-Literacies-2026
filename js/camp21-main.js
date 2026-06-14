@@ -3,15 +3,7 @@
   const $$ = (s,root=document)=>Array.from(root.querySelectorAll(s));
 
   // Resolve asset path relative to repo root regardless of page depth
-  function imgPath(path){
-    // Count how many directory levels deep we are
-    const depth = location.pathname.replace(/\/[^/]*$/, '').split('/').filter(p=>p&&p!=='').length;
-    // For GitHub Pages: juliemarlina-collab.github.io/Camp21-Synergising-Literacies-2026/
-    // index.html is at depth 1, pages/*.html at depth 2
-    // From pages/ we need '../' prefix, from root we need nothing
-    if(location.pathname.includes('/pages/')) return '../' + path;
-    return path;
-  }
+  function imgPath(path){ return path; }
 
   function renderLiveUpdates(){
     const box=$('[data-live-updates]'); if(!box) return;

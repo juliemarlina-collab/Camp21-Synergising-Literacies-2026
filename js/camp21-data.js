@@ -109,10 +109,10 @@ const CAMP21 = {
   ],
 
   updates: [
-    {time:'Now',      title:'Batik Discovery Workshop',   detail:'Cultural motif exploration underway at Studio 1.',   img:'assets/images/batik-discovery.png'},
-    {time:'10:30 AM', title:'Songket Weave Lab',          detail:'Prototype session and craft observation.',           img:'assets/images/songket-weave.png'},
-    {time:'11:15 AM', title:'Wau Innovation Studio',      detail:'Ideation in progress.',                             img:'assets/images/wau-studio.png'},
-    {time:'12:00 PM', title:'Gallery Walk',               detail:'Exhibition space open.',                            img:'assets/images/gallery-walk.png'}
+    {time:'Now',      title:'Batik Discovery Workshop',   detail:'Cultural motif exploration underway at Studio 1.',   img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-batik-discovery.png'},
+    {time:'10:30 AM', title:'Songket Weave Lab',          detail:'Prototype session and craft observation.',           img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/define-weave-card.png'},
+    {time:'11:15 AM', title:'Wau Innovation Studio',      detail:'Ideation in progress.',                             img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-wau-innovation.png'},
+    {time:'12:00 PM', title:'Gallery Walk',               detail:'Exhibition space open.',                            img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-testing-treasure.png'}
   ],
 
   phases: [
@@ -124,14 +124,14 @@ const CAMP21 = {
   ],
 
   experiences: [
-    {title:'Batik Discovery',      desc:'Explore motifs, meanings and the art of batik.',                    img:'assets/images/batik-discovery.png',  icon:'✺'},
-    {title:'Songket Weave Lab',    desc:'Learn, weave and innovate with timeless elegance.',                 img:'assets/images/songket-weave.png',    icon:'▧'},
-    {title:'Wau Innovation Studio',desc:'Design the skies with tradition and imagination.',                  img:'assets/images/wau-studio.png',       icon:'✦'},
-    {title:'Ukiran Heritage',      desc:'Carve stories. Preserve craft. Inspire future.',                    img:'assets/images/ukiran-heritage.png',  icon:'❖'},
-    {title:'Gallery Walk',         desc:'Celebrate creativity through exhibitions.',                         img:'assets/images/gallery-walk.png',     icon:'▣'},
-    {title:'Judge Portal',         desc:'For esteemed judges and evaluators.',                               img:'assets/images/judge-portal.png',    icon:'⚖'},
-    {title:'SMART DT App',         desc:'AI-powered companion for your DT journey.',                        img:'assets/images/ai-heritage.png',      icon:'▣'},
-    {title:'Participants\u2019 Corner', desc:'Resources, guides and tools to support your journey.',        img:'assets/images/hero-smartdt.png',    icon:'👥'}
+    {title:'Batik Discovery',      desc:'Explore motifs, meanings and the art of batik.',                    img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-batik-discovery.png',  icon:'✺'},
+    {title:'Songket Weave Lab',    desc:'Learn, weave and innovate with timeless elegance.',                 img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/define-weave-card.png',    icon:'▧'},
+    {title:'Wau Innovation Studio',desc:'Design the skies with tradition and imagination.',                  img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-wau-innovation.png',       icon:'✦'},
+    {title:'Ukiran Heritage',      desc:'Carve stories. Preserve craft. Inspire future.',                    img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-ukiran-heritage.png',  icon:'❖'},
+    {title:'Gallery Walk',         desc:'Celebrate creativity through exhibitions.',                         img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-testing-treasure.png',     icon:'▣'},
+    {title:'Judge Portal',         desc:'For esteemed judges and evaluators.',                               img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-judge-portal.png',    icon:'⚖'},
+    {title:'SMART DT App',         desc:'AI-powered companion for your DT journey.',                        img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-smartdt-app.png',      icon:'▣'},
+    {title:'Participants\u2019 Corner', desc:'Resources, guides and tools to support your journey.',        img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-partipants-corner.png',    icon:'👥'}
   ],
 
   // Rubric from official pitching task PDF
