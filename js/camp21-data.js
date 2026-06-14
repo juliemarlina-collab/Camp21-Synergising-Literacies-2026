@@ -5,7 +5,9 @@ const CAMP21 = {
     venue: 'Kompleks Kraf Kuala Lumpur · Jalan Conlay',
     dates: '13–16 July 2026',
     registrationLink: 'https://shorturl.at/Mo98y',
-    telegramLink: 'https://t.me/+vTPGEFIaXMs5Mjhl'
+    telegramLink: 'https://t.me/+vTPGEFIaXMs5Mjhl',
+    smartDtAppLink: 'https://smart-dt-project.netlify.app/welcome.html',
+    mapsLink: 'https://maps.app.goo.gl/Z4ntupM7cBtSWwfD7?g_st=ac'
   },
 
   // ── Live updates shown on activity-updates.html ONLY ─────────────────
@@ -18,11 +20,11 @@ const CAMP21 = {
 
   // ── DT phases — icons from Canva row 2-3 ─────────────────────────────
   phases: [
-    {no:'01', title:'Empathise', desc:'Interview artisans and understand the real cultural heritage challenge.', img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-empathy.png'},
-    {no:'02', title:'Define',    desc:'Frame the right problem rooted in craft and community need.',            img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-evidence.png'},
-    {no:'03', title:'Ideate',    desc:'Generate AI-powered heritage-inspired ideas.',                          img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-ideate.png'},
-    {no:'04', title:'Prototype', desc:'Build and test with AI visuals, mockups or video.',                     img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-prototype.png'},
-    {no:'05', title:'Test',      desc:'Gather feedback, refine and prepare your pitch.',                       img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-checklist.png'}
+    {no:'01', title:'Empathise', desc:'Interview artisans and understand the real cultural heritage challenge.', img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-empathy.png'},
+    {no:'02', title:'Define',    desc:'Frame the right problem rooted in craft and community need.',            img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-evidence.png'},
+    {no:'03', title:'Ideate',    desc:'Generate AI-powered heritage-inspired ideas.',                          img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-ideate.png'},
+    {no:'04', title:'Prototype', desc:'Build and test with AI visuals, mockups or video.',                     img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-prototype.png'},
+    {no:'05', title:'Test',      desc:'Gather feedback, refine and prepare your pitch.',                       img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-checklist.png'}
   ],
 
   // ── Experience grid
@@ -34,57 +36,71 @@ const CAMP21 = {
       title: 'Programme Flow',
       desc:  'Day-by-day schedule for all 4 days.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/batik-discovery.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-calendar.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-calendar.png',
       link:  'pages/programme.html'
     },
     {
       title: 'Trainers & Duties',
       desc:  'Phase trainers and group facilitation team.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/songket-weave.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-participants.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-participants.png',
       link:  'pages/trainers.html'
     },
     {
       title: 'Group Missions',
       desc:  '6 groups, 10 participants each, 2 trainers per group.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/wau-studio.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-community.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-community.png',
       link:  'pages/groups.html'
     },
     {
       title: 'DT Journey',
       desc:  '5-phase Design Thinking from empathy to pitch.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/ukiran-heritage.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-journey.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-journey.png',
       link:  'pages/dt-journey.html'
     },
     {
       title: 'Gallery Walk',
       desc:  'Heritage exhibition and creativity showcase.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/gallery-walk.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-gallery.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-gallery.png',
       link:  'pages/gallery-walk.html'
     },
     {
       title: 'Judge Portal',
       desc:  'Evaluation rubric and live score submission.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-judge-portal.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-checklist.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-checklist.png',
       link:  'pages/judges.html'
     },
     {
       title: 'Evidence Board',
       desc:  'Capture and submit DT templates T01–T16.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/hero-smartdt.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-evidence.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-evidence.png',
       link:  'pages/evidence-board.html'
     },
     {
       title: "Participants' Corner",
-      desc:  'Resources, logistics and essentials to bring.',
+      desc:  'SMART DT App, T01–T16 checklist, group task and pitch guide.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/kompleks-kraf.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-craft.png',
-      link:  'pages/logistics.html'
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-craft.png',
+      link:  'pages/participants.html'
+    },
+    {
+      title: 'Organiser Control Room',
+      desc:  'Live status, evidence, logistics and contacts for secretariat.',
+      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/kompleks-kraf.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-updates.png',
+      link:  'pages/organiser.html'
+    },
+    {
+      title: 'Help Desk Contacts',
+      desc:  'Lead trainer, secretariat, tech support and emergency contacts.',
+      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-partipants-corner.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-contact.png',
+      link:  'pages/contacts.html'
     }
   ],
 
