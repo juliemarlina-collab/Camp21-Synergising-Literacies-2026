@@ -171,23 +171,47 @@ const CAMP21 = {
     }
   ],
 
-  groups: Array.from({length:6},(_,i)=>({
-    id: i+1,
-    name: ['Team Warisan','Team Tenun','Team Batik','Team Songket','Team Ukiran','Team Wau'][i],
-    participants: 10,
-    trainers: `Trainer ${i*2+1} + Trainer ${i*2+2}`,
-    status: i<2 ? 'In Progress' : i===2 ? 'Needs Support' : 'Pending'
-  })),
+  groups: [
+    {id:1, name:'Team Warisan', participants:10, trainers:'MOHD. ZULKAFLI BIN MOHAMED + MUZIMAH AIDA BINTI MD MUSTAFA', status:'In Progress'},
+    {id:2, name:'Team Tenun', participants:10, trainers:'MOHD RIDHUAN BIN ISMAIL + SITI HANIS-SYAZANA BINTI MOHAMAD', status:'In Progress'},
+    {id:3, name:'Team Batik', participants:10, trainers:'KATHERINE LIVAN KEHING BINTI ABDULLAH + NUR SALINA BINTI SYAWALLUDDIN', status:'Needs Support'},
+    {id:4, name:'Team Songket', participants:10, trainers:'SARA RURAN FABIAN + MUHAMAD SYIRAZI BIN SUHAIMI', status:'Pending'},
+    {id:5, name:'Team Ukiran', participants:10, trainers:'MUHAMMAD ZAKI BIN YAHAYA + NOOR DARLIZA BINTI MOHAMAD ZAMRI', status:'Pending'},
+    {id:6, name:'Team Wau', participants:10, trainers:'TS. MOHAMMED FARID BIN ISHAK + NOR HANIZA BINTI MUSTAFAR KAMAR', status:'Pending'}
+  ],
 
   trainers:[
-    ['Lead Trainer',       'Madam Julie', 'Overall programme flow, quality control and trainer coordination'],
-    ['Phase 01 Input',     'To assign',   'Empathy, interview and observation input'],
-    ['Phase 02 Input',     'To assign',   'Define, POV and HMW input'],
-    ['Phase 03 Input',     'To assign',   'Ideation, SCAMPER and AI idea generation'],
-    ['Phase 04 Input',     'To assign',   'Prototype, mockup and AI visual concept'],
-    ['Phase 05 Input',     'To assign',   'Testing, gallery walk, pitch and reflection'],
-    ['Tech/App Support',   'To assign',   'SMART DT App access, QR code, troubleshooting'],
-    ['Documentation Team', 'To assign',   'Photos, video, activity updates and evidence board']
+    ['Lead Trainer', 'JULIE MARLINA BINTI HASAN', 'Overall programme flow, DT quality control, trainer coordination and escalation'],
+    ['Phase 01 Input', 'NOOR DARLIZA BINTI MOHAMAD ZAMRI', 'Empathy, artisan interview, observation and user insight briefing'],
+    ['Phase 02 Input', 'TS. MOHAMMED FARID BIN ISHAK', 'Define phase, POV statement and How Might We question framing'],
+    ['Phase 03 Input', 'MOHD. ZULKAFLI BIN MOHAMED', 'Ideation, SCAMPER, AI-assisted brainstorming and idea selection'],
+    ['Phase 04 Input', 'MUZIMAH AIDA BINTI MD MUSTAFA', 'Prototype planning, mockup development and AI visual concept guidance'],
+    ['Phase 05 Input', 'MUHAMMAD ZAKI BIN YAHAYA', 'Testing, gallery walk feedback, pitch flow and final reflection'],
+    ['Tech/App Support', 'NOR HANIZA BINTI MUSTAFAR KAMAR + NURFARHANAH BINTI OMAR', 'SMART DT App access, QR code, login support, submission backup and troubleshooting'],
+    ['Documentation Team', 'SITI HANIS-SYAZANA BINTI MOHAMAD + SARA RURAN FABIAN', 'Photos, videos, activity updates, evidence board and report assets'],
+    ['Judge Liaison', 'NUR SALINA BINTI SYAWALLUDDIN', 'Judge briefing, score form link, pitch order and panel feedback coordination'],
+    ['Logistics Support', 'KATHERINE LIVAN KEHING BINTI ABDULLAH + MUHAMAD SYIRAZI BIN SUHAIMI', 'Venue movement, group readiness, meal timing, pick-up reminders and participant support'],
+    ['AI Instructor', 'Madam Sathya', 'AI tools briefing, prompt guidance, AI-supported ideation and prototype support'],
+    ['Pitching Speaker', 'Mr Ram', 'Pitching input, storytelling structure, stage confidence and final presentation preparation']
+  ],
+
+  trainerDirectory:[
+    {name:"MOHD. ZULKAFLI BIN MOHAMED", institution:"POLITEKNIK KOTA BHARU"},
+    {name:"MUZIMAH AIDA BINTI MD MUSTAFA", institution:"POLITEKNIK KOTA BHARU"},
+    {name:"MOHD RIDHUAN BIN ISMAIL", institution:"POLITEKNIK SULTAN MIZAN ZAINAL ABIDIN"},
+    {name:"SITI HANIS-SYAZANA BINTI MOHAMAD", institution:"POLITEKNIK MUADZAM SHAH"},
+    {name:"KATHERINE LIVAN KEHING BINTI ABDULLAH", institution:"POLITEKNIK MUKAH"},
+    {name:"NUR SALINA BINTI SYAWALLUDDIN", institution:"KOLEJ KOMUNITI PASIR SALAK"},
+    {name:"SARA RURAN FABIAN", institution:"POLITEKNIK MUKAH, SARAWAK"},
+    {name:"MUHAMAD SYIRAZI BIN SUHAIMI", institution:"POLITEKNIK MUADZAM SHAH"},
+    {name:"MUHAMMAD ZAKI BIN YAHAYA", institution:"POLITEKNIK UNGKU OMAR"},
+    {name:"JULIE MARLINA BINTI HASAN", institution:"POLITEKNIK PORT DICKSON"},
+    {name:"NOOR DARLIZA BINTI MOHAMAD ZAMRI", institution:"POLITEKNIK PORT DICKSON"},
+    {name:"TS. MOHAMMED FARID BIN ISHAK", institution:"POLITEKNIK PORT DICKSON"},
+    {name:"NOR HANIZA BINTI MUSTAFAR KAMAR", institution:"POLITEKNIK PORT DICKSON"},
+    {name:"NURFARHANAH BINTI OMAR", institution:"POLITEKNIK PORT DICKSON"},
+    {name:"Madam Sathya", institution:"External Speaker · AI Instructor"},
+    {name:"Mr Ram", institution:"External Speaker · Pitching Speaker"}
   ],
 
   rubric:[
