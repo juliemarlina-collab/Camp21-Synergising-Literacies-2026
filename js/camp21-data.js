@@ -61,6 +61,13 @@ const CAMP21 = {
       link:  'pages/dt-journey.html'
     },
     {
+      title: 'Test Treasure',
+      desc:  'Feedback, reflection and final pitch readiness for Phase 05.',
+      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-test-treasure.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-test.png',
+      link:  'pages/dt-journey.html'
+    },
+    {
       title: 'Gallery Walk',
       desc:  'Heritage exhibition and creativity showcase.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/gallery-walk.png',
