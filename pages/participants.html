@@ -19,16 +19,16 @@
 </style>
 </head><body>
 <div class="org-strip"><div class="wide org-inner">
-  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kpt-jppkk.png" alt="KPT JPPKK"><span class="org-label">Kementerian Pendidikan Tinggi<strong>JPPKK</strong></span></div>
+  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kpt-jppkk.png" alt="KPT JPPKK"></div>
   <div class="org-divider"></div>
-  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-polycc.png" alt="PolyCC"><span class="org-label">Politeknik &amp; <strong>Kolej Komuniti</strong></span></div>
+  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-polycc.png" alt="PolyCC"></div>
   <div class="org-divider"></div>
-  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-politeknik-metro.png" alt="Politeknik METrO KL"><span class="org-label">Politeknik METrO<strong>Kuala Lumpur</strong></span></div>
+  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-politeknik-metro.png" alt="Politeknik METrO KL"></div>
   <div class="org-divider"></div>
-  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf KL"><span class="org-label">Kompleks Kraf<strong>Kuala Lumpur</strong></span></div>
+  <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf KL"></div>
 </div></div>
 <header class="site-header"><div class="wide nav">
-  <a class="brand" href="/Camp21-Synergising-Literacies-2026/index.html"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/Camp21-badge-logo.png" alt="Camp21" height="46" onerror="this.outerHTML='&lt;span class=\'brand-text\'&gt;Camp&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;'"></a>
+  <a class="brand" href="/Camp21-Synergising-Literacies-2026/index.html"><span class="brand-text">Camp<span>21</span></span></a>
   <nav class="nav-links"><a href="/Camp21-Synergising-Literacies-2026/index.html">Home</a><a href="programme.html">Programme</a><a href="trainers.html">Trainers</a><a href="groups.html">Groups</a><a href="dt-journey.html">DT Journey</a><a href="gallery-walk.html">Gallery Walk</a><a href="judges.html">Judges</a><a href="participants.html" class="active">Participants</a><a href="activity-updates.html">Updates</a><a href="contacts.html">Contacts</a></nav>
   <div class="nav-cta"><span class="lang">🇲🇾 EN</span><a class="btn btn-orange btn-small" href="https://shorturl.at/Mo98y" target="_blank" rel="noopener">Register Now →</a><button class="menu-btn" aria-label="Menu">☰</button></div>
 </div></header>
@@ -68,18 +68,83 @@
       <p style="font-size:11px;opacity:.6;margin-top:8px">If QR doesn't work, ask your Tech/App Support trainer</p>
     </div>
 
-    <!-- Today's Mission -->
-    <div class="info-card">
-      <div class="kicker" style="color:#c8922a">Today's Mission — Day 1</div>
-      <h3>Heritage Immersion &amp; Empathise</h3>
-      <p style="font-size:13px;color:#555;margin-top:8px">Complete these outputs by end of Day 1:</p>
-      <div style="margin-top:12px">
+    <!-- Today's Mission — dynamic -->
+    <div class="info-card" id="mission-card">
+      <div class="kicker" style="color:#c8922a" id="mission-day">Today's Mission — Day 1</div>
+      <h3 id="mission-title">Heritage Immersion &amp; Empathise</h3>
+      <p style="font-size:13px;color:#555;margin-top:8px" id="mission-subtitle">Complete these outputs by end of Day 1:</p>
+      <div style="margin-top:12px" id="mission-tasks">
         <div class="task-row"><div class="task-num t-empathy">T01</div><div><div class="task-label">Artisan Interview Notes</div><div class="task-sub">Interview at Craft Gallery · Due 12:30 PM</div></div></div>
         <div class="task-row"><div class="task-num t-empathy">T02</div><div><div class="task-label">Empathy Map</div><div class="task-sub">Feelings, thoughts, actions of artisan · Due 5:00 PM</div></div></div>
         <div class="task-row"><div class="task-num t-empathy">T03</div><div><div class="task-label">Persona Card</div><div class="task-sub">Who is your artisan user? · Due 5:00 PM</div></div></div>
         <div class="task-row"><div class="task-num t-empathy">T04</div><div><div class="task-label">Needs Summary</div><div class="task-sub">What does the artisan need most? · Due 5:30 PM</div></div></div>
       </div>
     </div>
+<script>
+(function(){
+  var now = new Date();
+  var MY = new Date(now.toLocaleString('en-US',{timeZone:'Asia/Kuala_Lumpur'}));
+  var d = MY.toISOString().slice(0,10);
+  var days = {
+    '2026-07-13': {
+      label: 'Today's Mission — Day 1',
+      title: 'Heritage Immersion &amp; Empathise',
+      sub: 'Complete these outputs by end of Day 1:',
+      tasks: [
+        ['t-empathy','T01','Artisan Interview Notes','Interview at Craft Gallery · Due 12:30 PM'],
+        ['t-empathy','T02','Empathy Map','Feelings, thoughts, actions of artisan · Due 5:00 PM'],
+        ['t-empathy','T03','Persona Card','Who is your artisan user? · Due 5:00 PM'],
+        ['t-empathy','T04','Needs Summary','What does the artisan need most? · Due 5:30 PM']
+      ]
+    },
+    '2026-07-14': {
+      label: 'Today's Mission — Day 2',
+      title: 'Define &amp; Ideate',
+      sub: 'Complete these outputs by end of Day 2:',
+      tasks: [
+        ['t-define','T05','POV Statement','Define your user's core problem · Due 10:30 AM'],
+        ['t-define','T06','HMW Question','How might we question · Due 10:30 AM'],
+        ['t-ideate','T07','Brainstorming','100 ideas minimum · Due 2:30 PM'],
+        ['t-ideate','T08','SCAMPER','Apply SCAMPER technique · Due 2:30 PM'],
+        ['t-ideate','T09','Idea Matrix','Rank and map ideas · Due Evening'],
+        ['t-ideate','T10','Final Idea Selection','Choose your winning concept · Due Night']
+      ]
+    },
+    '2026-07-15': {
+      label: 'Today's Mission — Day 3',
+      title: 'Prototype &amp; Pitch Prep',
+      sub: 'Complete these outputs by end of Day 3:',
+      tasks: [
+        ['t-prototype','T11','Prototype Plan','Your build roadmap · Due 10:00 AM'],
+        ['t-prototype','T12','Version Log','Document each iteration · Due 11:00 AM'],
+        ['t-prototype','T13','Evidence Photos','Capture every stage · Due 3:00 PM'],
+        ['t-test','T14','Feedback Form','Test with peers, record findings · Due 3:30 PM'],
+        ['t-test','T15','Improvement Plan','Refine based on feedback · Due Evening'],
+        ['t-test','T16','Reflection','What did you learn? · Due Night']
+      ]
+    },
+    '2026-07-16': {
+      label: 'Today's Mission — Day 4',
+      title: 'Pitch &amp; Closing Ceremony',
+      sub: 'Pitching starts 9:00 AM at Laman Wau. Batik attire required.',
+      tasks: [
+        ['t-test','✓','All T01–T16 submitted','Check with your App Recorder before 8:30 AM'],
+        ['t-test','✓','Pitch deck ready','8 slides, 10 minutes, all 4 members must speak'],
+        ['t-test','✓','Gallery Walk station set','Display your prototype and supporting materials']
+      ]
+    }
+  };
+  var day = days[d];
+  if(!day) return; // outside camp — keep Day 1 as default
+  document.getElementById('mission-day').innerHTML = day.label;
+  document.getElementById('mission-title').innerHTML = day.title;
+  document.getElementById('mission-subtitle').textContent = day.sub;
+  var html = day.tasks.map(function(t){
+    return '<div class="task-row"><div class="task-num '+t[0]+'">'+t[1]+'</div><div><div class="task-label">'+t[2]+'</div><div class="task-sub">'+t[3]+'</div></div></div>';
+  }).join('');
+  document.getElementById('mission-tasks').innerHTML = html;
+})();
+</script>
 
   </div>
 
@@ -156,13 +221,17 @@
     <div><b>Camp21: Synergising Literacies 2026</b><br>AI-Powered Design Thinking for Sustainable Cultural Heritage<br><span style="font-size:12px;opacity:.6;display:block;margin-top:4px">Kompleks Kraf Kuala Lumpur · 13–16 July 2026</span></div>
     <div style="text-align:right;font-size:12px;opacity:.65">Inspired by Malaysian Arts · Driven by Ideas · Powered by AI<br><a href="https://t.me/+vTPGEFIaXMs5Mjhl" style="color:#e8c97a" target="_blank">Join Telegram →</a></div>
   </div>
-  <div class="footer-org">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+      <img src="/Camp21-Synergising-Literacies-2026/assets/logo/Camp21-badge-logo.png" alt="Camp21" style="height:38px;width:auto;opacity:.75;filter:brightness(0) invert(1)">
+    </div>
+    <div class="footer-org">
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kpt-jppkk.png" alt="KPT">
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-polycc.png" alt="PolyCC">
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-politeknik-metro.png" alt="Politeknik">
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf">
   </div>
-</div></footer>
+  <div style="font-size:11px;opacity:.4;text-align:center;padding-top:10px;border-top:1px solid rgba(255,255,255,.06);margin-top:8px">© 2026 Politeknik METrO Kuala Lumpur · Camp21: Synergising Literacies 2026</div>
+  </div></footer>
 <script src="/Camp21-Synergising-Literacies-2026/js/camp21-config.js"></script>
 <script src="/Camp21-Synergising-Literacies-2026/js/camp21-data.js"></script>
 <script src="/Camp21-Synergising-Literacies-2026/js/camp21-sheets.js"></script>
