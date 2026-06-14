@@ -417,3 +417,15 @@ img{max-width:100%;height:auto}
   .grid-2,.grid-3{grid-template-columns:1fr}
   .grid-4{grid-template-columns:1fr 1fr}
 }
+
+/* ── Role cards icon wrapper ── */
+.role-icon-wrap{
+  width:72px;height:72px;border-radius:20px;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 14px;padding:12px;
+}
+.role-icon-wrap img{
+  width:100%;height:100%;object-fit:contain;display:block;
+}
+.role-card{cursor:pointer}
+.role-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(6,26,61,.14)}
