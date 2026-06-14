@@ -1,4 +1,27 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Organiser Control Room · Camp21</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/Camp21-Synergising-Literacies-2026/css/camp21-heritage.css"><style>.control-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.control-list{display:flex;flex-direction:column;gap:10px}.control-item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #eee;font-size:13px}.control-item:last-child{border-bottom:0}@media(max-width:900px){.control-grid{grid-template-columns:1fr}}</style></head><body>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Organiser Control Room · Camp21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/Camp21-Synergising-Literacies-2026/css/camp21-heritage.css"><style>
+.ctrl-card{background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow-sm)}
+.ctrl-card h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.status-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:13px}
+.status-row:last-child{border-bottom:none}
+.pin-screen{position:fixed;inset:0;background:rgba(6,26,61,.95);display:flex;align-items:center;justify-content:center;z-index:999}
+.pin-box{background:#fff;border-radius:24px;padding:36px;text-align:center;max-width:340px;width:90%}
+.pin-dots{display:flex;gap:12px;justify-content:center;margin:20px 0}
+.pin-dot{width:16px;height:16px;border-radius:50%;background:#e0e0e0;transition:.2s}
+.pin-dot.filled{background:#1a2744}
+.pin-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.pin-btn{height:56px;border-radius:14px;border:2px solid #e0e0e0;background:#f9f9f9;font-size:22px;font-weight:700;cursor:pointer;transition:.15s;color:#1a2744}
+.pin-btn:hover{background:#1a2744;color:#fff;border-color:#1a2744}
+.post-form textarea{width:100%;padding:10px;border:1.5px solid #ddd;border-radius:10px;font-family:inherit;font-size:13px;resize:vertical;margin:6px 0}
+.post-form select,.post-form input{width:100%;padding:10px;border:1.5px solid #ddd;border-radius:10px;font-family:inherit;font-size:13px;margin:4px 0}
+.evidence-row{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #f0f0f0;font-size:13px}
+.evidence-row:last-child{border-bottom:none}
+</style>
+</head><body>
 <div class="org-strip"><div class="wide org-inner">
   <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kpt-jppkk.png" alt="KPT JPPKK"><span class="org-label">Kementerian Pendidikan Tinggi<strong>JPPKK</strong></span></div>
   <div class="org-divider"></div>
@@ -9,44 +32,258 @@
   <div class="org-item"><img class="org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf KL"><span class="org-label">Kompleks Kraf<strong>Kuala Lumpur</strong></span></div>
 </div></div>
 <header class="site-header"><div class="wide nav">
-  <a class="brand" href="/Camp21-Synergising-Literacies-2026/index.html"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/Camp21-badge-logo.png" alt="Camp21" height="46" onerror="this.outerHTML='&lt;span class=&quot;brand-text&quot;&gt;Camp&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;'"></a>
-  <nav class="nav-links"><a href="/Camp21-Synergising-Literacies-2026/index.html">Home</a><a href="programme.html">Programme</a><a href="trainers.html">Trainers</a><a href="groups.html">Groups</a><a href="dt-journey.html">DT Journey</a><a href="gallery-walk.html">Gallery Walk</a><a href="judges.html">Judges</a><a href="participants.html">Participants</a><a href="organiser.html" class="active">Organiser</a><a href="activity-updates.html">Updates</a><a href="contacts.html">Contacts</a></nav>
-  <div class="nav-cta"><span class="lang">🇲🇾 EN</span><a class="btn btn-orange btn-small" href="https://shorturl.at/Mo98y" target="_blank" rel="noopener">Register Now →</a><button class="menu-btn" aria-label="Menu">☰</button></div>
+  <a class="brand" href="/Camp21-Synergising-Literacies-2026/index.html"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/Camp21-badge-logo.png" alt="Camp21" height="46" onerror="this.outerHTML='&lt;span class=\'brand-text\'&gt;Camp&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;'"></a>
+  <nav class="nav-links"><a href="/Camp21-Synergising-Literacies-2026/index.html">Home</a><a href="programme.html">Programme</a><a href="trainers.html">Trainers</a><a href="groups.html">Groups</a><a href="dt-journey.html">DT Journey</a><a href="gallery-walk.html">Gallery Walk</a><a href="judges.html">Judges</a><a href="participants.html">Participants</a><a href="activity-updates.html">Updates</a></nav>
+  <div class="nav-cta"><span class="lang">🇲🇾 EN</span><a class="btn btn-orange btn-small" href="https://shorturl.at/Mo98y" target="_blank" rel="noopener">Register Now →</a><button class="menu-btn">☰</button></div>
 </div></header>
-<main><section class="page-hero"><div class="wide"><div class="eyebrow">Secretariat & Coordination Centre</div><h1>Organiser Control Room</h1><p>One place to monitor live status, group progress, evidence collection, logistics and urgent communication.</p></div></section>
-<section class="section section-alt"><div class="wide">
+<main>
+<section class="page-hero"><div class="wide">
+  <div class="eyebrow">Organiser Only</div>
+  <h1>Control Room</h1>
+  <p>Manage announcements, group progress, evidence and logistics.</p>
+</div></section>
+
+<!-- PIN Gate (shown until correct PIN entered) -->
+<div class="pin-screen" id="pinGate">
+  <div class="pin-box">
+    <div style="font-size:36px;margin-bottom:8px">🗂️</div>
+    <h2 style="font-family:'Playfair Display',serif;color:#1a2744;margin-bottom:4px">Organiser Control Room</h2>
+    <p style="font-size:13px;color:#888;margin-bottom:4px">Enter PIN to access</p>
+    <div class="pin-dots" id="pinDots">
+      <div class="pin-dot" id="d0"></div><div class="pin-dot" id="d1"></div>
+      <div class="pin-dot" id="d2"></div><div class="pin-dot" id="d3"></div>
+    </div>
+    <p id="pinError" style="color:#c62828;font-size:12px;min-height:16px"></p>
+    <div class="pin-pad">
+      <button class="pin-btn" onclick="pinPress(1)">1</button><button class="pin-btn" onclick="pinPress(2)">2</button><button class="pin-btn" onclick="pinPress(3)">3</button><button class="pin-btn" onclick="pinPress(4)">4</button><button class="pin-btn" onclick="pinPress(5)">5</button><button class="pin-btn" onclick="pinPress(6)">6</button><button class="pin-btn" onclick="pinPress(7)">7</button><button class="pin-btn" onclick="pinPress(8)">8</button><button class="pin-btn" onclick="pinPress(9)">9</button>
+      <div></div>
+      <button class="pin-btn" onclick="pinPress(0)">0</button>
+      <button class="pin-btn" onclick="pinClear()" style="font-size:16px">⌫</button>
+    </div>
+    <p style="margin-top:16px;font-size:11px;color:#bbb">Hint: Camp year</p>
+  </div>
+</div>
+
+<section class="section section-alt" id="orgContent" style="display:none"><div class="wide">
+
+  <!-- Live Status Banner -->
+  <div style="background:linear-gradient(135deg,#1a2744,#2d4a8a);border-radius:18px;padding:20px 24px;color:#fff;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+    <div>
+      <div style="font-size:11px;opacity:.7;letter-spacing:.1em;font-weight:700;margin-bottom:4px">ORGANISER CONTROL ROOM · CAMP21 2026</div>
+      <div id="orgStatus" style="font-size:18px;font-weight:700">Loading live status…</div>
+      <div id="orgPhase" style="font-size:13px;opacity:.8;margin-top:4px">Checking Google Sheets…</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a href="activity-updates.html" class="btn btn-small" style="background:rgba(255,255,255,.15);color:#fff">📢 Updates</a>
+      <a href="evidence-board.html" class="btn btn-small" style="background:rgba(255,255,255,.15);color:#fff">📦 Evidence</a>
+      <a href="groups.html" class="btn btn-small" style="background:rgba(255,255,255,.15);color:#fff">👥 Groups</a>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-bottom:24px">
+
+    <!-- Post Announcement -->
+    <div class="ctrl-card">
+      <div class="badge">📢 Post Announcement</div>
+      <h3>Push to Activity Updates</h3>
+      <div class="post-form">
+        <select id="postTag">
+          <option value="live">🟢 LIVE — Current activity</option>
+          <option value="next">🔵 NEXT — Coming up</option>
+          <option value="urgent" selected>🔴 URGENT — Important notice</option>
+          <option value="trainer">🟡 TRAINER ONLY</option>
+          <option value="judge">🟣 JUDGE ONLY</option>
+          <option value="done">✅ DONE — Completed</option>
+        </select>
+        <input id="postTitle" placeholder="Announcement title" type="text">
+        <textarea id="postMessage" rows="3" placeholder="Full message detail…"></textarea>
+        <select id="postAudience">
+          <option value="all">📣 All — Everyone sees this</option>
+          <option value="trainer">🧑‍🏫 Trainers only</option>
+          <option value="judge">⚖️ Judges only</option>
+          <option value="organiser">🗂️ Organisers only</option>
+        </select>
+        <button class="btn btn-orange" style="width:100%;margin-top:10px" onclick="postAnnouncement()">Post Announcement →</button>
+        <div id="postResult" style="font-size:12px;color:#218143;margin-top:6px;display:none">✅ Posted successfully!</div>
+      </div>
+    </div>
+
+    <!-- Group Phase Update -->
+    <div class="ctrl-card">
+      <div class="badge">👥 Group Progress Update</div>
+      <h3>Update Phase Status</h3>
+      <div class="post-form">
+        <select id="updateGroup">
+          <option value="">— Select group —</option>
+          <option value="1">Team Warisan (Group 1)</option>
+          <option value="2">Team Tenun (Group 2)</option>
+          <option value="3">Team Batik (Group 3)</option>
+          <option value="4">Team Songket (Group 4)</option>
+          <option value="5">Team Ukiran (Group 5)</option>
+          <option value="6">Team Wau (Group 6)</option>
+        </select>
+        <select id="updatePhase">
+          <option value="empathy">Phase 01 — Empathise</option>
+          <option value="define">Phase 02 — Define</option>
+          <option value="ideate">Phase 03 — Ideate</option>
+          <option value="prototype">Phase 04 — Prototype</option>
+          <option value="pitch">Phase 05 — Pitch</option>
+        </select>
+        <select id="updateStatus">
+          <option value="not_started">⬜ Not Started</option>
+          <option value="progress">⏳ In Progress</option>
+          <option value="done">✅ Completed</option>
+          <option value="needs_support">🔴 Needs Support</option>
+          <option value="pitch_ready">⭐ Pitch Ready</option>
+        </select>
+        <button class="btn btn-navy" style="width:100%;margin-top:10px" onclick="updateGroup()">Update Progress →</button>
+        <div id="groupResult" style="font-size:12px;color:#218143;margin-top:6px;display:none">✅ Group status updated!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <div class="section-head"><div><div class="kicker">Quick Access</div><h2 class="section-title">Control Room Links</h2></div></div>
   <div class="grid-4" style="margin-bottom:28px">
-    <a class="info-card" href="activity-updates.html" style="text-decoration:none"><div style="font-size:30px">📢</div><h3>Live Updates</h3><p>Announcements and urgent reminders.</p></a>
-    <a class="info-card" href="groups.html" style="text-decoration:none"><div style="font-size:30px">👥</div><h3>Group Status</h3><p>Progress, risks and pitch readiness.</p></a>
-    <a class="info-card" href="evidence-board.html" style="text-decoration:none"><div style="font-size:30px">📸</div><h3>Evidence Board</h3><p>Documentation and reporting checklist.</p></a>
-    <a class="info-card" href="contacts.html" style="text-decoration:none"><div style="font-size:30px">☎️</div><h3>Help Desk</h3><p>Contacts for every duty area.</p></a>
+    <a href="programme.html" class="ctrl-card" style="text-decoration:none;text-align:center;cursor:pointer">
+      <div style="font-size:32px;margin-bottom:8px">📅</div><h3>Programme</h3><p style="font-size:12px;color:#888">Full day-by-day timetable</p>
+    </a>
+    <a href="trainers.html" class="ctrl-card" style="text-decoration:none;text-align:center;cursor:pointer">
+      <div style="font-size:32px;margin-bottom:8px">🧑‍🏫</div><h3>Trainers</h3><p style="font-size:12px;color:#888">Trainer duties and checklist</p>
+    </a>
+    <a href="judges.html" class="ctrl-card" style="text-decoration:none;text-align:center;cursor:pointer">
+      <div style="font-size:32px;margin-bottom:8px">⚖️</div><h3>Judges</h3><p style="font-size:12px;color:#888">Score portal and pitch order</p>
+    </a>
+    <a href="evidence-board.html" class="ctrl-card" style="text-decoration:none;text-align:center;cursor:pointer">
+      <div style="font-size:32px;margin-bottom:8px">📦</div><h3>Evidence</h3><p style="font-size:12px;color:#888">Documentation status</p>
+    </a>
   </div>
-  <div class="control-grid">
-    <div class="info-card"><div class="kicker">Operational Snapshot</div><h2 class="section-title" style="font-size:34px">Current Programme Status</h2><div class="control-list" style="margin-top:16px">
-      <div class="control-item"><span>Current Activity</span><span class="status progress">DT Workshop / Activity Updates</span></div>
-      <div class="control-item"><span>Next Milestone</span><span class="status pending">Day 1 Reflection / Evidence Check</span></div>
-      <div class="control-item"><span>Group Progress Board</span><span class="status progress">Monitor daily</span></div>
-      <div class="control-item"><span>Judge Score Workflow</span><span class="status pending">Google Form link pending</span></div>
-      <div class="control-item"><span>AI Instructor</span><span class="status done">Madam Sathya · AI Instructor</span></div>
-      <div class="control-item"><span>Pitching Speaker</span><span class="status done">Mr Ram · Pitching Speaker</span></div>
-      <div class="control-item"><span>SMART DT App</span><a class="btn btn-teal btn-small" href="https://smart-dt-project.netlify.app/welcome.html" target="_blank" rel="noopener">Open App →</a></div>
-    </div></div>
-    <div class="info-card"><div class="badge">Urgent Checklist</div><h3>Secretariat Must Confirm</h3><ul style="margin-top:10px"><li>Registration list and group allocation</li><li>Trainer duty roster</li><li>AI Instructor and Pitching Speaker arrival/session readiness</li><li>Venue rooms and movement flow</li><li>Judge arrival and score form</li><li>Documentation folder links</li><li>Emergency contact list</li></ul></div>
+
+  <!-- Emergency Contacts -->
+  <div class="ctrl-card">
+    <div class="badge">🚨 Emergency Contacts</div>
+    <h3>On-Site Key Contacts</h3>
+    <div class="grid-3" style="margin-top:12px">
+      <div style="font-size:13px;padding:10px;background:#f9f9f9;border-radius:12px">
+        <strong>Lead Trainer</strong><br>Madam Julie<br>
+        <a href="tel:" style="color:#0FA6A0">TBA</a>
+      </div>
+      <div style="font-size:13px;padding:10px;background:#f9f9f9;border-radius:12px">
+        <strong>General Info</strong><br>Pn. Jasmine<br>
+        <a href="tel:0126224979" style="color:#0FA6A0">012-6224979</a>
+      </div>
+      <div style="font-size:13px;padding:10px;background:#f9f9f9;border-radius:12px">
+        <strong>Registration</strong><br>Pn. Herlina<br>
+        <a href="tel:0138465354" style="color:#0FA6A0">013-8465354</a>
+      </div>
+      <div style="font-size:13px;padding:10px;background:#f9f9f9;border-radius:12px">
+        <strong>Accommodation</strong><br>Ustaz Alif<br>
+        <a href="tel:0148392936" style="color:#0FA6A0">014-8392936</a>
+      </div>
+      <div style="font-size:13px;padding:10px;background:#f9f9f9;border-radius:12px">
+        <strong>Venue (Kompleks Kraf)</strong><br>Main Office<br>
+        <a href="tel:0321621234" style="color:#0FA6A0">03-2162 1234</a>
+      </div>
+      <div style="font-size:13px;padding:10px;background:#f9f9f9;border-radius:12px">
+        <strong>Telegram Group</strong><br>Lecturers only<br>
+        <a href="https://t.me/+vTPGEFIaXMs5Mjhl" style="color:#0FA6A0" target="_blank">Join Group →</a>
+      </div>
+    </div>
   </div>
-  <div class="section-head" style="margin-top:34px"><div><div class="kicker">Daily Control</div><h2 class="section-title">Organiser Action Board</h2></div></div>
-  <div class="info-card" style="padding:0;overflow:hidden"><table class="table"><thead><tr><th>Area</th><th>What to Check</th><th>PIC</th><th>Status</th></tr></thead><tbody>
-    <tr><td><strong>Activity Updates</strong></td><td>Current and next activity displayed correctly</td><td>Secretariat</td><td><span class="status progress">Daily</span></td></tr>
-    <tr><td><strong>Trainers</strong></td><td>2 trainers per group and phase input trainers assigned from confirmed name list</td><td>Lead Trainer</td><td><span class="status done">Confirmed</span></td></tr>
-    <tr><td><strong>Speakers</strong></td><td>AI Instructor: Madam Sathya · Pitching Speaker: Mr Ram</td><td>Secretariat</td><td><span class="status done">Confirmed</span></td></tr>
-    <tr><td><strong>Participants</strong></td><td>Group role assignment and SMART DT access</td><td>Group Trainers</td><td><span class="status pending">Day 1</span></td></tr>
-    <tr><td><strong>Judges</strong></td><td>Rubric, pitch order and score form</td><td>Judge Liaison</td><td><span class="status pending">Before Day 4</span></td></tr>
-    <tr><td><strong>Evidence</strong></td><td>Photos, videos, app screenshots and report assets</td><td>Documentation Team</td><td><span class="status progress">Ongoing</span></td></tr>
-    <tr><td><strong>Logistics</strong></td><td>Venue, transport, meals, attire and emergency contact</td><td>Logistics PIC</td><td><span class="status done">Ready</span></td></tr>
-  </tbody></table></div>
-</div></section></main><footer class="footer"><div class="wide footer-inner">
+
+</div></section>
+
+<script>
+// ── PIN System ─────────────────────────────────────────────────
+let pinInput = '';
+const PIN = (window.CAMP21_CONFIG?.PIN_ORGANISER) || '2026';
+
+function pinPress(n) {
+  if (pinInput.length >= 4) return;
+  pinInput += n;
+  updateDots();
+  if (pinInput.length === 4) setTimeout(checkPin, 200);
+}
+function pinClear() {
+  pinInput = pinInput.slice(0,-1);
+  updateDots();
+  document.getElementById('pinError').textContent = '';
+}
+function updateDots() {
+  [0,1,2,3].forEach(i => document.getElementById('d'+i).classList.toggle('filled', i < pinInput.length));
+}
+function checkPin() {
+  if (pinInput === PIN) {
+    document.getElementById('pinGate').style.display = 'none';
+    document.getElementById('orgContent').style.display = 'block';
+    loadOrgData();
+  } else {
+    document.getElementById('pinError').textContent = 'Incorrect PIN. Try again.';
+    pinInput = '';
+    updateDots();
+  }
+}
+
+// ── Load organiser data ────────────────────────────────────────
+async function loadOrgData() {
+  if (window.SHEETS && CAMP21_CONFIG?.PRIVATE_SHEETS_ENABLED) {
+    const cfg = await SHEETS.getConfig();
+    if (cfg) {
+      document.getElementById('orgStatus').textContent = cfg.current_status || 'Programme Active';
+      document.getElementById('orgPhase').textContent = cfg.current_phase ? `Current phase: ${cfg.current_phase}` : 'Day ' + (cfg.current_day || '?');
+    }
+  } else {
+    document.getElementById('orgStatus').textContent = 'Camp21: Synergising Literacies 2026';
+    document.getElementById('orgPhase').textContent = '13–16 July 2026 · Kompleks Kraf KL';
+  }
+}
+
+// ── Post announcement ──────────────────────────────────────────
+async function postAnnouncement() {
+  const title = document.getElementById('postTitle').value.trim();
+  const msg   = document.getElementById('postMessage').value.trim();
+  if (!title || !msg) { alert('Please fill in title and message.'); return; }
+  const data = {
+    tag: document.getElementById('postTag').value,
+    title,
+    message: msg,
+    audience: document.getElementById('postAudience').value,
+    posted_by: 'Organiser'
+  };
+  if (window.SHEETS && CAMP21_CONFIG?.PRIVATE_SHEETS_ENABLED) {
+    await SHEETS.postUpdate(data);
+  }
+  // Always save locally
+  const q = JSON.parse(localStorage.getItem('camp21_announcements')||'[]');
+  q.unshift({...data, ts: new Date().toISOString()});
+  localStorage.setItem('camp21_announcements', JSON.stringify(q));
+  document.getElementById('postResult').style.display = 'block';
+  setTimeout(() => {
+    document.getElementById('postResult').style.display = 'none';
+    document.getElementById('postTitle').value = '';
+    document.getElementById('postMessage').value = '';
+  }, 2500);
+}
+
+// ── Update group phase ─────────────────────────────────────────
+async function updateGroup() {
+  const gid    = document.getElementById('updateGroup').value;
+  const phase  = document.getElementById('updatePhase').value;
+  const status = document.getElementById('updateStatus').value;
+  if (!gid) { alert('Please select a group.'); return; }
+  if (window.SHEETS && CAMP21_CONFIG?.PRIVATE_SHEETS_ENABLED) {
+    await SHEETS.updateGroupPhase(gid, phase, status);
+  }
+  document.getElementById('groupResult').style.display = 'block';
+  setTimeout(() => document.getElementById('groupResult').style.display = 'none', 2500);
+}
+</script>
+
+</main>
+<footer class="footer"><div class="wide footer-inner">
   <div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%;flex-wrap:wrap;gap:16px">
     <div><b>Camp21: Synergising Literacies 2026</b><br>AI-Powered Design Thinking for Sustainable Cultural Heritage<br><span style="font-size:12px;opacity:.6;display:block;margin-top:4px">Kompleks Kraf Kuala Lumpur · 13–16 July 2026</span></div>
-    <div style="text-align:right;font-size:12px;opacity:.65">Inspired by Malaysian Arts · Driven by Ideas · Powered by AI<br><a href="https://t.me/+vTPGEFIaXMs5Mjhl" style="color:#e8c97a" target="_blank" rel="noopener">Join Telegram →</a></div>
+    <div style="text-align:right;font-size:12px;opacity:.65">Inspired by Malaysian Arts · Driven by Ideas · Powered by AI<br><a href="https://t.me/+vTPGEFIaXMs5Mjhl" style="color:#e8c97a" target="_blank">Join Telegram →</a></div>
   </div>
   <div class="footer-org">
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kpt-jppkk.png" alt="KPT">
@@ -54,4 +291,10 @@
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-politeknik-metro.png" alt="Politeknik">
     <img class="footer-org-logo" src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf">
   </div>
-</div></footer><script src="/Camp21-Synergising-Literacies-2026/js/camp21-data.js"></script><script src="/Camp21-Synergising-Literacies-2026/js/camp21-main.js"></script></body></html>
+</div></footer>
+<script src="/Camp21-Synergising-Literacies-2026/js/camp21-config.js"></script>
+<script src="/Camp21-Synergising-Literacies-2026/js/camp21-data.js"></script>
+<script src="/Camp21-Synergising-Literacies-2026/js/camp21-sheets.js"></script>
+<script src="/Camp21-Synergising-Literacies-2026/js/camp21-main.js"></script>
+
+</body></html>
