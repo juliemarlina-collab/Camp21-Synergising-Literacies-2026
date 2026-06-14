@@ -129,9 +129,9 @@ const CAMP21 = {
     {title:'Wau Innovation Studio',desc:'Design the skies with tradition and imagination.',                  img:'assets/images/wau-studio.png',       icon:'✦'},
     {title:'Ukiran Heritage',      desc:'Carve stories. Preserve craft. Inspire future.',                    img:'assets/images/ukiran-heritage.png',  icon:'❖'},
     {title:'Gallery Walk',         desc:'Celebrate creativity through exhibitions.',                         img:'assets/images/gallery-walk.png',     icon:'▣'},
-    {title:'Judge Portal',         desc:'For esteemed judges and evaluators.',                               img:'assets/images/kompleks-kraf.png',    icon:'⚖'},
+    {title:'Judge Portal',         desc:'For esteemed judges and evaluators.',                               img:'assets/images/judge-portal.png',    icon:'⚖'},
     {title:'SMART DT App',         desc:'AI-powered companion for your DT journey.',                        img:'assets/images/ai-heritage.png',      icon:'▣'},
-    {title:'Participants\u2019 Corner', desc:'Resources, guides and tools to support your journey.',        img:'assets/images/kl-skyline.png',       icon:'👥'}
+    {title:'Participants\u2019 Corner', desc:'Resources, guides and tools to support your journey.',        img:'assets/images/hero-smartdt.png',    icon:'👥'}
   ],
 
   // Rubric from official pitching task PDF
