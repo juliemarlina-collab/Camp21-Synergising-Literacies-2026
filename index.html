@@ -135,11 +135,28 @@
 <!-- ── TODAY'S PROGRAMME STRIP ── -->
 <section style="background:#061a3d;padding:20px 0;border-bottom:1px solid rgba(201,146,42,.2)">
   <div class="wide milestone-strip" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
-    <div style="color:#e8c97a;font-size:11px;font-weight:800;letter-spacing:.1em;white-space:nowrap">📅 NEXT MILESTONE</div>
-    <div style="color:#fff;font-size:14px;font-weight:600">13 July 2026 · Registration &amp; Breakfast — 8:30 AM · Main Seminar Hall</div>
+    <div style="color:#e8c97a;font-size:11px;font-weight:800;letter-spacing:.1em;white-space:nowrap">📅 <span id="milestone-label">NEXT MILESTONE</span></div>
+    <div id="milestone-text" style="color:#fff;font-size:14px;font-weight:600">13 July 2026 · Registration &amp; Breakfast — 8:30 AM · Main Seminar Hall</div>
     <div style="margin-left:auto"><a href="/Camp21-Synergising-Literacies-2026/pages/programme.html" class="btn btn-small btn-teal">Full Schedule →</a></div>
   </div>
 </section>
+<script>
+(function(){
+  var now = new Date();
+  var MY = new Date(now.toLocaleString('en-US',{timeZone:'Asia/Kuala_Lumpur'}));
+  var d = MY.toISOString().slice(0,10);
+  var label = 'NEXT MILESTONE', text = '';
+  if(d < '2026-06-19')      { text = 'Registration closes 19 June 2026 — secure your spot now!'; }
+  else if(d < '2026-07-12') { var days=Math.ceil((new Date('2026-07-13')-MY)/86400000); text = 'Camp starts in '+days+' day'+(days===1?'':'s')+' · 13 July 2026'; }
+  else if(d === '2026-07-12'){ text = 'Arrival Day — check in to accommodation · Programme begins tomorrow 7:00 AM'; }
+  else if(d === '2026-07-13'){ label='TODAY — DAY 1'; text = 'Heritage Immersion · Registration & Breakfast 8:30 AM · Main Seminar Hall'; }
+  else if(d === '2026-07-14'){ label='TODAY — DAY 2'; text = 'Ideate · Design Thinking Workshop 9:00 AM · Main Seminar Hall'; }
+  else if(d === '2026-07-15'){ label='TODAY — DAY 3'; text = 'Prototyping & Pitch Prep · Tie Dye Workshop · Laman Wau'; }
+  else if(d === '2026-07-16'){ label='TODAY — DAY 4'; text = 'Pitching & Closing Ceremony · 9:00 AM · Laman Wau · Batik attire'; }
+  else                       { label='PROGRAMME COMPLETE'; text = 'Thank you Camp21 participants · See you at the next camp!'; }
+  if(text){ document.getElementById('milestone-text').textContent = text; document.getElementById('milestone-label').textContent = label; }
+})();
+</script>
 
 <!-- ── DT JOURNEY STRIP ── -->
 <section class="section section-alt">
