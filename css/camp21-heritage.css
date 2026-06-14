@@ -271,3 +271,18 @@ img{max-width:100%;height:auto}
   .role-card h3{font-size:13px!important;line-height:1.2;margin-bottom:4px!important}.role-card p{font-size:10.5px!important;line-height:1.35!important;min-height:42px;margin-bottom:8px}.role-card .btn{min-height:32px!important;font-size:10.5px!important;padding:0 8px!important;width:100%!important}
   .exp-card,.exp-card.small{min-height:210px;border-radius:18px}.mosaic .tile{height:190px;border-radius:16px}
 }
+
+
+/* Home cleanup: correct DT card order, remove redundant SDG heading, replace emoji stats */
+.sdg-infographic-only{background:#061a3d;padding:32px 0 34px}
+.milestone-label{display:flex;align-items:center;gap:8px;color:#e8c97a;font-size:11px;font-weight:800;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase}
+.milestone-label img{width:22px;height:22px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.18))}
+.stat .stat-icon{width:34px;height:34px;object-fit:contain;margin-bottom:12px;display:block;filter:drop-shadow(0 3px 8px rgba(0,0,0,.25))}
+.stat i{display:none}
+@media(max-width:700px){
+  .sdg-infographic-only{padding:22px 0 26px}
+  .sdg-infographic-only .wide{width:min(100% - 28px,1180px)}
+  .milestone-label{width:100%;justify-content:flex-start;font-size:10px;gap:7px}
+  .milestone-label img{width:20px;height:20px}
+  .stat .stat-icon{width:28px;height:28px;margin-bottom:8px}
+}
