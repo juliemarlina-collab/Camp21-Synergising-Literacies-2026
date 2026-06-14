@@ -13,7 +13,7 @@ const CAMP21 = {
     {time:'Now',      title:'Batik Discovery Workshop',  detail:'Cultural motif exploration underway at Studio 1.',  img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/batik-discovery.png'},
     {time:'10:30 AM', title:'Songket Weave Lab',         detail:'Prototype session and craft observation.',          img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/songket-weave.png'},
     {time:'11:15 AM', title:'Wau Innovation Studio',     detail:'Ideation in progress.',                            img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/wau-studio.png'},
-    {time:'12:00 PM', title:'Gallery Walk',              detail:'Exhibition space open.',                           img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/gallery-walk.png'}
+    {time:'12:00 PM', title:'Gallery Walk',              detail:'Exhibition space open.',                           img:'/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-batik-discovery.png'}
   ],
 
   // ── DT phases — icons from Canva row 2-3 ─────────────────────────────
@@ -61,7 +61,7 @@ const CAMP21 = {
     {
       title: 'Gallery Walk',
       desc:  'Heritage exhibition and creativity showcase.',
-      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/gallery-walk.png',
+      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-batik-discovery.png',
       icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-activity.png',
       link:  'pages/gallery-walk.html'
     },
@@ -82,7 +82,7 @@ const CAMP21 = {
     {
       title: "Participants' Corner",
       desc:  'Resources, logistics and essentials to bring.',
-      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/kompleks-kraf.png',
+      img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-partipants-corner.png',
       icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-participants.png',
       link:  'pages/logistics.html'
     }
