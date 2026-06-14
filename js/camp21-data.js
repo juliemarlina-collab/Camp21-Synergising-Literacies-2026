@@ -18,11 +18,11 @@ const CAMP21 = {
 
   // ── DT phases — icons from Canva row 2-3 ─────────────────────────────
   phases: [
-    {no:'01', title:'Empathise', desc:'Interview artisans and understand the real cultural heritage challenge.', img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-empathy.png'},
-    {no:'02', title:'Define',    desc:'Frame the right problem rooted in craft and community need.',            img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-define.png'},
-    {no:'03', title:'Ideate',    desc:'Generate AI-powered heritage-inspired ideas.',                          img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-ideate.png'},
-    {no:'04', title:'Prototype', desc:'Build and test with AI visuals, mockups or video.',                     img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-prototype.png'},
-    {no:'05', title:'Test',      desc:'Gather feedback, refine and prepare your pitch.',                       img:'/Camp21-Synergising-Literacies-2026/assets/Icons/icon-test.png'}
+    {no:'01', title:'Empathise', desc:'Interview artisans and understand the real cultural heritage challenge.', img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-empathy.png'},
+    {no:'02', title:'Define',    desc:'Frame the right problem rooted in craft and community need.',            img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-define.png'},
+    {no:'03', title:'Ideate',    desc:'Generate AI-powered heritage-inspired ideas.',                          img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-ideate.png'},
+    {no:'04', title:'Prototype', desc:'Build and test with AI visuals, mockups or video.',                     img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-prototype.png'},
+    {no:'05', title:'Test',      desc:'Gather feedback, refine and prepare your pitch.',                       img:'/Camp21-Synergising-Literacies-2026/assets/icons/icon-test.png'}
   ],
 
   // ── Experience grid
@@ -34,56 +34,56 @@ const CAMP21 = {
       title: 'Programme Flow',
       desc:  'Day-by-day schedule for all 4 days.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/batik-discovery.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-event.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-event.png',
       link:  'pages/programme.html'
     },
     {
       title: 'Trainers & Duties',
       desc:  'Phase trainers and group facilitation team.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/songket-weave.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-trainer.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-trainer.png',
       link:  'pages/trainers.html'
     },
     {
       title: 'Group Missions',
       desc:  '6 groups, 10 participants each, 2 trainers per group.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/wau-studio.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-participants.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-participants.png',
       link:  'pages/groups.html'
     },
     {
       title: 'DT Journey',
       desc:  '5-phase Design Thinking from empathy to pitch.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/ukiran-heritage.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-dt-journey.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-dt-journey.png',
       link:  'pages/dt-journey.html'
     },
     {
       title: 'Gallery Walk',
       desc:  'Heritage exhibition and creativity showcase.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-batik-discovery.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-activity.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-activity.png',
       link:  'pages/gallery-walk.html'
     },
     {
       title: 'Judge Portal',
       desc:  'Evaluation rubric and live score submission.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-judge-portal.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-test.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-test.png',
       link:  'pages/judges.html'
     },
     {
       title: 'Evidence Board',
       desc:  'Capture and submit DT templates T01–T16.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/hero-smartdt.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-define.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-define.png',
       link:  'pages/evidence-board.html'
     },
     {
       title: "Participants' Corner",
       desc:  'Resources, logistics and essentials to bring.',
       img:   '/Camp21-Synergising-Literacies-2026/assets/craft-cards/card-partipants-corner.png',
-      icon:  '/Camp21-Synergising-Literacies-2026/assets/Icons/icon-participants.png',
+      icon:  '/Camp21-Synergising-Literacies-2026/assets/icons/icon-participants.png',
       link:  'pages/logistics.html'
     }
   ],
