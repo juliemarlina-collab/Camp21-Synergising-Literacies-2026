@@ -22,24 +22,23 @@
 .brand{
   display:flex !important;
   align-items:center !important;
-  gap:14px !important;
+  gap:0 !important;
+  min-width:260px !important;
 }
 
-.brand-logo{
-  width:58px !important;
-  height:58px !important;
-  object-fit:contain !important;
-  flex-shrink:0 !important;
+/* Hide the small crest/logo in the header. Keep text brand only. */
+.site-header .brand-logo{
+  display:none !important;
 }
 
 .brand-text{
   display:flex !important;
   flex-direction:column !important;
-  line-height:1.05 !important;
+  line-height:1.02 !important;
 }
 
 .brand-text strong{
-  font-size:26px !important;
+  font-size:28px !important;
   font-weight:900 !important;
   color:#fff !important;
   letter-spacing:-.03em !important;
@@ -133,7 +132,7 @@
 
 .footer-grid-updated{
   display:grid !important;
-  grid-template-columns:.9fr .9fr 1fr 1.55fr !important;
+  grid-template-columns:.9fr .9fr 1fr 1.65fr !important;
   gap:34px !important;
   align-items:start !important;
   padding:16px 0 30px !important;
@@ -158,15 +157,16 @@
   margin-top:12px !important;
 }
 
+/* QR placeholder kept square and neat */
 .qr-placeholder{
-  width:96px !important;
-  height:96px !important;
-  border-radius:16px !important;
+  width:116px !important;
+  height:116px !important;
+  border-radius:18px !important;
   background:#fff !important;
   color:var(--camp-indigo) !important;
   display:grid !important;
   place-items:center !important;
-  font-size:13px !important;
+  font-size:14px !important;
   font-weight:900 !important;
   margin-top:14px !important;
 }
@@ -175,35 +175,52 @@
   min-width:0 !important;
 }
 
-/* Bigger and more readable institution logos */
+/* Institution logo cards: same square feel as QR box, larger logos */
 .footer-logos-standardized{
   display:grid !important;
-  grid-template-columns:repeat(2,minmax(190px,1fr)) !important;
-  gap:18px !important;
+  grid-template-columns:repeat(4,116px) !important;
+  gap:14px !important;
   margin-top:12px !important;
+  align-items:start !important;
 }
 
 .logo-card{
   background:#fff !important;
   border-radius:18px !important;
-  min-height:118px !important;
+  width:116px !important;
+  height:116px !important;
+  min-height:116px !important;
   display:flex !important;
   align-items:center !important;
   justify-content:center !important;
-  padding:18px 20px !important;
+  padding:10px !important;
   box-shadow:0 12px 28px rgba(0,0,0,.14) !important;
 }
 
 .logo-card img{
   width:100% !important;
-  max-width:190px !important;
-  max-height:76px !important;
-  height:auto !important;
+  height:100% !important;
+  max-width:96px !important;
+  max-height:82px !important;
   object-fit:contain !important;
   display:block !important;
   background:transparent !important;
   padding:0 !important;
   border-radius:0 !important;
+}
+
+/* Make thin horizontal logos more visible */
+.logo-card img[alt*="POLYCC"],
+.logo-card img[alt*="Politeknik"]{
+  max-width:104px !important;
+  max-height:72px !important;
+}
+
+.logo-card img[alt*="KPT"],
+.logo-card img[alt*="JPPKK"],
+.logo-card img[alt*="Kompleks"]{
+  max-width:100px !important;
+  max-height:86px !important;
 }
 
 /* Keep copyright and policy links on one clean line */
@@ -238,7 +255,16 @@
     grid-template-columns:1fr 1fr !important;
   }
   .footer-logos-standardized{
-    grid-template-columns:repeat(2,minmax(170px,1fr)) !important;
+    grid-template-columns:repeat(4,106px) !important;
+  }
+  .logo-card{
+    width:106px !important;
+    height:106px !important;
+    min-height:106px !important;
+  }
+  .logo-card img{
+    max-width:90px !important;
+    max-height:76px !important;
   }
 }
 
@@ -247,14 +273,14 @@
 }
 
 @media(max-width:768px){
-  .brand-logo{width:48px !important;height:48px !important;}
-  .brand-text strong{font-size:22px !important;}
+  .brand{min-width:auto !important;}
+  .brand-text strong{font-size:24px !important;}
   .brand-text span{font-size:10px !important;}
   .hub-btn{display:none !important;}
   .footer-grid-updated{grid-template-columns:1fr !important;gap:22px !important;}
-  .footer-logos-standardized{grid-template-columns:repeat(2,1fr) !important;}
-  .logo-card{min-height:94px !important;padding:14px !important;}
-  .logo-card img{max-width:150px !important;max-height:58px !important;}
+  .footer-logos-standardized{grid-template-columns:repeat(2,116px) !important;}
+  .logo-card{width:116px !important;height:116px !important;min-height:116px !important;}
+  .logo-card img{max-width:96px !important;max-height:82px !important;}
   .footer-bottom{flex-direction:column !important;align-items:flex-start !important;flex-wrap:wrap !important;}
   .footer-bottom div{justify-content:flex-start !important;}
 }
