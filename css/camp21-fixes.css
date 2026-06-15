@@ -123,7 +123,7 @@
 
 /* Footer spacing and standardisation */
 .site-footer{
-  padding-top:60px !important;
+  padding-top:54px !important;
   padding-bottom:28px !important;
 }
 
@@ -133,10 +133,10 @@
 
 .footer-grid-updated{
   display:grid !important;
-  grid-template-columns:1fr 1fr 1fr 1.2fr !important;
+  grid-template-columns:.9fr .9fr 1fr 1.55fr !important;
   gap:34px !important;
   align-items:start !important;
-  padding:16px 0 26px !important;
+  padding:16px 0 30px !important;
 }
 
 .footer-col h4{
@@ -175,28 +175,29 @@
   min-width:0 !important;
 }
 
+/* Bigger and more readable institution logos */
 .footer-logos-standardized{
   display:grid !important;
-  grid-template-columns:repeat(2,minmax(120px,1fr)) !important;
-  gap:14px !important;
-  margin-top:10px !important;
+  grid-template-columns:repeat(2,minmax(190px,1fr)) !important;
+  gap:18px !important;
+  margin-top:12px !important;
 }
 
 .logo-card{
   background:#fff !important;
-  border-radius:16px !important;
-  min-height:96px !important;
+  border-radius:18px !important;
+  min-height:118px !important;
   display:flex !important;
   align-items:center !important;
   justify-content:center !important;
-  padding:14px 16px !important;
-  box-shadow:0 10px 24px rgba(0,0,0,.10) !important;
+  padding:18px 20px !important;
+  box-shadow:0 12px 28px rgba(0,0,0,.14) !important;
 }
 
 .logo-card img{
-  max-width:100% !important;
-  max-height:56px !important;
-  width:auto !important;
+  width:100% !important;
+  max-width:190px !important;
+  max-height:76px !important;
   height:auto !important;
   object-fit:contain !important;
   display:block !important;
@@ -205,25 +206,44 @@
   border-radius:0 !important;
 }
 
+/* Keep copyright and policy links on one clean line */
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.10) !important;
   padding-top:18px !important;
   margin-top:8px !important;
   display:flex !important;
+  align-items:center !important;
   justify-content:space-between !important;
   gap:20px !important;
-  flex-wrap:wrap !important;
+  flex-wrap:nowrap !important;
+}
+
+.footer-bottom div{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  gap:22px !important;
+  white-space:nowrap !important;
 }
 
 .footer-bottom a,
 .footer-bottom span{
   color:rgba(255,255,255,.78) !important;
   font-size:14px !important;
+  line-height:1.4 !important;
+}
+
+@media(max-width:1240px){
+  .footer-grid-updated{
+    grid-template-columns:1fr 1fr !important;
+  }
+  .footer-logos-standardized{
+    grid-template-columns:repeat(2,minmax(170px,1fr)) !important;
+  }
 }
 
 @media(max-width:1100px){
   .main-nav{display:none !important;}
-  .footer-grid-updated{grid-template-columns:repeat(2,1fr) !important;}
 }
 
 @media(max-width:768px){
@@ -233,6 +253,8 @@
   .hub-btn{display:none !important;}
   .footer-grid-updated{grid-template-columns:1fr !important;gap:22px !important;}
   .footer-logos-standardized{grid-template-columns:repeat(2,1fr) !important;}
-  .logo-card{min-height:86px !important;}
-  .logo-card img{max-height:48px !important;}
+  .logo-card{min-height:94px !important;padding:14px !important;}
+  .logo-card img{max-width:150px !important;max-height:58px !important;}
+  .footer-bottom{flex-direction:column !important;align-items:flex-start !important;flex-wrap:wrap !important;}
+  .footer-bottom div{justify-content:flex-start !important;}
 }
