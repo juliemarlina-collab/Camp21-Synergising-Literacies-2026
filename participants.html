@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Participant Hub | CAMP21 2026</title>
+  <meta name="description" content="CAMP21 Participant Hub — registration, draw lot, group allocation, essentials and Smart DT guide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="header-shell">
+      <a href="index.html" class="brand" aria-label="CAMP21 Home"><img class="brand-logo" src="assets/logos/camp21-logo.png" alt="CAMP21 logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><div class="brand-mark" style="display:none">C21</div><div class="brand-text"><strong>CAMP21</strong><span>Participant Hub</span></div></a>
+      <nav class="nav" id="mainNav" aria-label="Main navigation"><a href="index.html">Home</a><a href="#register">Register</a><a href="#groups">Groups</a><a href="#essentials">Essentials</a><a href="#attire">Attire</a><a href="#submission">Submission</a></nav>
+      <div class="header-actions"><a href="index.html#progress" class="btn btn-small btn-ghost">Progress</a><a href="#register" class="btn btn-small btn-gold">Draw Lot</a><button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad participant-hero">
+      <div class="container hero-bento simple-hero">
+        <article class="hero-copy bento-card hero-panel"><p class="eyebrow">Participant Hub</p><h1>Register.<br><span>Draw Lot.</span><br>Find Your Team.</h1><p class="tagline">10 Teams × 6 Participants</p><p class="hero-desc">This page is prepared for the CAMP21 registration and draw-lot flow. Participants will later see their group code, team name, members and next task automatically.</p><div class="hero-buttons"><a href="#register" class="btn btn-gold">Start Registration</a><a href="#groups" class="btn btn-light">View Team Names</a></div></article>
+        <article class="hero-visual bento-card image-card"><img src="assets/images/home-card-students-collaboration.png" alt="Students collaborating with AI robot and heritage materials"></article>
+      </div>
+    </section>
+
+    <section id="register" class="section-pad compact">
+      <div class="container participant-register-grid">
+        <article class="bento-card register-card"><p class="eyebrow">Registration & Draw Lot Demo</p><h2>Check or assign participant group.</h2><p>For now, this is a front-end demo. Later, we connect it to Google Sheets / Smart DT App so registration, draw lot and group display update automatically.</p>
+          <form id="drawLotForm" class="draw-form"><label>Participant Name<input type="text" id="participantName" placeholder="Enter participant name" required></label><label>Email / ID<input type="text" id="participantId" placeholder="Optional email or participant ID"></label><button class="btn btn-gold" type="submit">Draw My Team</button></form>
+        </article>
+        <article class="bento-card result-card" id="drawResult"><p class="eyebrow">Group Result</p><h3>Waiting for registration...</h3><p>After draw lot, participant group details will appear here.</p></article>
+      </div>
+    </section>
+
+    <section id="groups" class="section-pad compact dark-slab">
+      <div class="container"><div class="section-head center"><p class="eyebrow">Official CAMP21 Team Names</p><h2>10 teams for the 2026 challenge.</h2></div><div class="team-name-grid" id="teamNameGrid"></div></div>
+    </section>
+
+    <section id="essentials" class="section-pad compact">
+      <div class="container essentials-grid"><article class="bento-card guide-card"><img src="assets/icons/icon-what-to-bring.png" alt="What to bring icon"><h3>What to Bring</h3><p>Laptop / tablet, stationery, extension socket, mobile phone with sufficient data and personal medicine.</p></article><article class="bento-card guide-card" id="attire"><img src="assets/icons/icon-attire.png" alt="Attire icon"><h3>Attire Guide</h3><p>Workshop: smart-casual. Closing ceremony: Batik. Bring outerwear for night activity.</p></article><article class="bento-card guide-card" id="getting-there"><img src="assets/icons/icon-transport.png" alt="Transport icon"><h3>Getting There</h3><p>Venue: Kompleks Kraf Kuala Lumpur. MRT Conlay Station is opposite Kompleks Kraf.</p></article><article class="bento-card guide-card"><img src="assets/icons/icon-accommodation.png" alt="Accommodation icon"><h3>Stay</h3><p>Recommended accommodation: Royale Chulan KL or nearby accommodation around Jalan Conlay.</p></article></div>
+    </section>
+
+    <section id="submission" class="section-pad compact dark-slab">
+      <div class="container progress-bento"><article class="section-intro bento-card progress-copy"><p class="eyebrow">Smart DT App Guide</p><h2>Submit task evidence and track your group progress.</h2><p>Participants will complete each Design Thinking phase in the Smart DT App, upload evidence and monitor trainer feedback.</p><a href="#" class="btn btn-gold">Open Smart DT App</a></article><article class="dashboard bento-card"><div class="dash-topline"><span>Participant Checklist</span><strong>Before Pitching</strong></div><div class="checklist-list"><p>✓ Complete Empathise evidence</p><p>✓ Submit Define problem statement</p><p>✓ Upload Ideation output</p><p>✓ Upload Prototype evidence</p><p>✓ Complete Test feedback and reflection</p></div></article></div>
+    </section>
+
+    <section id="pitching" class="section-pad compact"><div class="container pitch-bento"><article class="bento-card image-card pitch-image"><img src="assets/images/home-card-pitching-challenge.png" alt="Pitching challenge"></article><article class="feature-copy bento-card"><p class="eyebrow">Pitching Preparation</p><h2>Prepare a clear AI + heritage solution pitch.</h2><p>Each team prepares 7–8 slides and presents a 10-minute pitch followed by 5-minute Q&A.</p><div class="pitch-pills"><span>7–8 slides</span><span>10 min pitch</span><span>5 min Q&A</span><span>Equal participation</span></div></article></div></section>
+
+    <section id="contact" class="section-pad compact dark-slab"><div class="container resources-bento"><article class="section-intro bento-card editorial-card"><p class="eyebrow">Secretariat Contact</p><h2>Need support during CAMP21?</h2><p>Refer to the secretariat, lead trainers or assisted trainers if your group needs help with registration, Smart DT App submission or logistics.</p></article><article class="resource-list bento-card"><a href="#">General Info</a><a href="#">Registration Help</a><a href="#">Accommodation Help</a><a href="#">Smart DT App Support</a></article></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><div class="footer-brand">CAMP21</div><p>Participant Hub</p><p>Register • Draw Lot • Group Display</p></div><div><h3>Participant Links</h3><a href="#register">Register</a><a href="#groups">Group Names</a><a href="#essentials">Essentials</a><a href="#submission">Submission</a></div><div><h3>Programme</h3><a href="index.html#journey">DT Journey</a><a href="index.html#sdg">SDG Impact</a><a href="index.html#progress">Progress</a></div><div><h3>Group Structure</h3><p>10 official teams</p><p>6 participants per team</p><p>60 participants total</p></div></div><div class="footer-bottom">© 2026 CAMP21: Synergising Literacies 2026. All rights reserved.</div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
