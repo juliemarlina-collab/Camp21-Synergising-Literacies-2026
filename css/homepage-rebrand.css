@@ -119,25 +119,33 @@ body.home-rebrand {
   min-height: 690px;
   padding: 44px 0 56px;
   background:
-    radial-gradient(circle at 12% 92%, rgba(247,37,133,.10), transparent 25%),
-    radial-gradient(circle at 84% 8%, rgba(249,115,22,.13), transparent 26%),
-    #fff;
+    linear-gradient(115deg, rgba(255,255,255,.93) 0%, rgba(255,250,242,.86) 48%, rgba(255,230,188,.74) 100%),
+    linear-gradient(135deg, #fffaf3 0%, #ffeac4 52%, #fff7ee 100%);
 }
 
-.new-hero::before,
+/* Stronger premium heritage hero background: gold floral + wau + museum/kraf silhouette */
+.new-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.66) 0%, rgba(255,255,255,.38) 46%, rgba(255,222,157,.18) 100%),
+    url("../assets/backgrounds/hero-golden-heritage-bg.png") center / cover no-repeat;
+  opacity: .92;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .new-hero::after {
   content: "";
   position: absolute;
-  inset: auto auto 0 0;
-  width: 330px;
-  height: 330px;
-  background: url("data:image/svg+xml,%3Csvg width='300' height='300' viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23f6a23c' stroke-width='1.3' opacity='.45'%3E%3Cpath d='M28 270C42 185 78 106 156 44'/%3E%3Cpath d='M44 268c36-54 74-95 126-122'/%3E%3Cpath d='M80 260c-6-42 5-76 36-104 31-27 65-27 92-6'/%3E%3Cpath d='M22 232c30-12 52-31 62-66 9-33 1-70-21-99'/%3E%3Cpath d='M124 228c38-18 55-49 50-92'/%3E%3Ccircle cx='64' cy='214' r='7'/%3E%3Ccircle cx='110' cy='186' r='6'/%3E%3Ccircle cx='158' cy='144' r='7'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 88%, rgba(247,37,133,.10), transparent 25%),
+    radial-gradient(circle at 88% 8%, rgba(249,115,22,.18), transparent 28%),
+    radial-gradient(circle at 65% 58%, rgba(255,205,110,.17), transparent 26%);
   pointer-events: none;
-}
-.new-hero::after {
-  inset: 0 0 auto auto;
-  transform: rotate(180deg);
-  opacity: .75;
+  z-index: 1;
 }
 
 .hero-split {
@@ -440,4 +448,124 @@ body.home-rebrand {
   .final-cta-card,
   .footer-flex { flex-direction: column; align-items: flex-start; }
   .footer-logo-row { justify-content: flex-start; }
+}
+
+/* V7 stronger hero card holder using existing CAMP21 assets. Colours unchanged. */
+.hero-showcase-card {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  border-radius: 34px;
+  padding: 10px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,245,229,.78)) padding-box,
+    linear-gradient(135deg, var(--home-gold), var(--home-orange), var(--home-pink)) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 30px 76px rgba(22,5,74,.18);
+  overflow: visible;
+}
+
+.hero-showcase-card::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  z-index: -1;
+  border-radius: 44px;
+  background:
+    radial-gradient(circle at 76% 18%, rgba(249,115,22,.28), transparent 34%),
+    radial-gradient(circle at 16% 78%, rgba(247,37,133,.18), transparent 36%);
+  filter: blur(16px);
+}
+
+.hero-main-photo {
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  background: var(--home-indigo);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.42);
+}
+
+.hero-main-photo img {
+  width: 100%;
+  height: 430px;
+  display: block;
+  object-fit: cover;
+  border-radius: 26px;
+  transform: scale(1.02);
+}
+
+.hero-main-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(22,5,74,0) 42%, rgba(22,5,74,.45) 100%),
+    radial-gradient(circle at 88% 15%, rgba(255,216,121,.16), transparent 26%);
+  pointer-events: none;
+}
+
+.hero-photo-tag {
+  position: absolute;
+  z-index: 3;
+  left: 18px;
+  top: 18px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.94);
+  color: var(--home-indigo);
+  font-size: 12px;
+  font-weight: 950;
+  box-shadow: 0 12px 24px rgba(22,5,74,.16);
+}
+
+.hero-mini-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hero-mini-gallery article {
+  position: relative;
+  min-height: 126px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(22,5,74,.10);
+}
+
+.hero-mini-gallery img {
+  width: 100%;
+  height: 126px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-mini-gallery article::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(22,5,74,0) 25%, rgba(22,5,74,.72) 100%);
+}
+
+.hero-mini-gallery span {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .02em;
+  text-shadow: 0 2px 8px rgba(0,0,0,.34);
+}
+
+/* keep old selector safe if any older markup remains */
+.hero-image-card { display: none; }
+
+@media (max-width: 720px) {
+  .hero-main-photo img { height: 340px; }
+  .hero-mini-gallery { grid-template-columns: 1fr; }
+  .hero-mini-gallery article,
+  .hero-mini-gallery img { height: 150px; min-height: 150px; }
 }
