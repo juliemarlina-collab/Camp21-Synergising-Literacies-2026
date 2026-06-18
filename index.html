@@ -8,34 +8,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/camp21-heritage.css">
-  <link rel="stylesheet" href="css/camp21-fixes.css">
+  <link rel="stylesheet" href="/Camp21-Synergising-Literacies-2026/css/camp21-heritage.css">
+  <link rel="stylesheet" href="/Camp21-Synergising-Literacies-2026/css/camp21-fixes.css">
 </head>
 <body>
 
-<!-- HEADER: clean single row only, no extra institution strip -->
-<header class="site-header">
-  <div class="wide nav-wrap nav-wrap-v9">
-    <a class="brand brand-v9" href="index.html" aria-label="CAMP21 Home">
-      <img class="brand-logo" src="assets/logo/Camp21-badge-logo.png" alt="CAMP21 Logo" onerror="this.style.display='none'">
+<!-- HEADER: V11 stabilised clean navigation -->
+<header class="site-header v11-header">
+  <div class="wide nav-wrap v11-nav-wrap">
+    <a class="brand v11-brand" href="index.html" aria-label="Camp21 Home">
+      <img class="brand-logo" src="assets/logo/Camp21-badge-logo.png" alt="Camp21 Logo" onerror="this.style.display='none'">
       <div class="brand-text">
         <strong>CAMP21</strong>
         <span>Synergising Literacies 2026</span>
       </div>
     </a>
 
-    <nav class="main-nav main-nav-v9" aria-label="Main navigation">
+    <nav class="main-nav nav-links v11-main-nav" aria-label="Main navigation">
       <a class="active" href="index.html">Home</a>
       <a href="#about">About</a>
       <a href="pages/programme.html">Programme</a>
       <a href="pages/logistics.html">Location</a>
       <a href="pages/participants.html">Participant Hub</a>
       <div class="nav-dropdown">
-        <button type="button" class="drop-trigger">SMART DT Hub ▾</button>
-        <div class="drop-menu">
+        <a href="pages/participants.html" class="dropdown-trigger">SMART DT Hub ▾</a>
+        <div class="dropdown-menu" aria-label="SMART DT Hub menu">
           <a href="pages/participants.html">Participant View</a>
-          <a href="pages/trainers.html">Pensyarah Pengiring</a>
-          <a href="pages/trainers.html#facilitators">Speaker / Facilitators</a>
+          <a href="pages/trainers.html">Pensyarah Pengiring View</a>
+          <a href="pages/trainers.html">Speaker / Facilitator View</a>
           <a href="pages/organiser.html">Organiser View</a>
           <a href="pages/judges.html">Judge View</a>
         </div>
@@ -44,31 +44,25 @@
       <a href="pages/contacts.html">Help Desk</a>
     </nav>
 
-    <div class="nav-actions">
-      <a class="lang-pill" href="#">MY | EN</a>
+    <div class="nav-actions v11-nav-actions">
+      <a class="lang" href="#">MY | EN</a>
       <a class="btn btn-primary btn-small" href="https://shorturl.at/Mo98y" target="_blank" rel="noopener">Register Now →</a>
-      <button class="menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
+      <button class="menu-btn" aria-label="Menu">☰</button>
     </div>
   </div>
 </header>
 
 <main>
 
-<!-- HERO -->
-<section class="hero-section hero-section-v8">
+<!-- HERO: V11 stabilised reference layout -->
+<section class="hero-section v11-hero-section">
   <div class="hero-bg-golden" aria-hidden="true"></div>
-  <div class="wide hero-grid hero-grid-v8">
-    <div class="hero-copy-wrap hero-copy-v8">
-      <div class="hero-brandline">
-        <img class="hero-badge" src="assets/logo/Camp21-badge-logo.png" alt="Camp21 Synergising Literacies 2026" onerror="this.style.display='none'">
-        <span class="brandline-divider"></span>
-        <div>
-          <span class="section-tag">AI-Powered Design Thinking for Cultural Heritage</span>
-          <span class="hero-microcopy">Inspired by Culture • Driven by Ideas</span>
-        </div>
-      </div>
-
-      <h1 class="hero-title hero-title-v8">
+  <div class="wide hero-grid v11-hero-grid">
+    <div class="hero-copy-wrap v11-hero-copy">
+      <img class="hero-badge" src="assets/logo/Camp21-badge-logo.png" alt="Camp21 Synergising Literacies 2026" onerror="this.style.display='none'">
+      <span class="section-tag">AI-Powered Design Thinking for Cultural Heritage</span>
+      <p class="hero-microtag">Inspired by Culture • Driven by Ideas</p>
+      <h1 class="hero-title">
         <span class="hero-camp">CAMP21:</span>
         <span class="hero-main">Synergising Literacies 2026</span>
       </h1>
@@ -81,63 +75,21 @@
 
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://shorturl.at/Mo98y" target="_blank" rel="noopener">Register Now →</a>
-        <a class="btn btn-outline" href="pages/participants.html">Explore Participant Hub →</a>
+        <a class="btn btn-outline v11-outline" href="pages/participants.html">Explore Participant Hub →</a>
       </div>
     </div>
 
-    <div class="hero-visual hero-visual-v8" aria-label="Camp21 cultural innovation visual">
-      <div class="hero-image-holder">
-        <img class="hero-main-photo" src="assets/craft-cards/hero-main.png" alt="Camp21 cultural innovation visual at Kompleks Kraf Kuala Lumpur" onerror="this.src='assets/heroes/hero-main.png'">
-        <div class="hero-image-label">Kompleks Kraf KL</div>
-        <div class="hero-stat hero-stat-v8">
-          <strong>10</strong>
-          <span>Teams</span>
-          <small>60 Participants</small>
-        </div>
-      </div>
-      <div class="hero-mini-gallery" aria-label="CAMP21 feature highlights">
-        <a href="pages/participants.html"><img src="assets/craft-cards/card-partipants-corner.png" alt="Participants Corner"><span>Participants</span></a>
-        <a href="pages/dt-journey.html"><img src="assets/craft-cards/card-wau-innovation.png" alt="Wau Studio"><span>Wau Studio</span></a>
-        <a href="pages/participants.html"><img src="assets/craft-cards/card-smartdt-app.png" alt="Smart DT App"><span>Smart DT</span></a>
+    <div class="hero-visual v11-hero-visual" aria-label="Camp21 cultural innovation visual">
+      <div class="hero-location-chip">Kompleks Kraf KL</div>
+      <img src="assets/craft-cards/hero-main.png" alt="Camp21 cultural heritage and Kuala Lumpur hero visual" onerror="this.src='assets/heroes/hero-main.png'">
+      <div class="hero-stat v11-hero-stat">
+        <strong>10</strong>
+        <span class="hero-stat-title">Teams</span>
+        <span>60 Participants</span>
       </div>
     </div>
   </div>
 </section>
-
-<section class="section role-path-section dark-feature" id="choose-path">
-  <div class="wide">
-    <div class="section-head-row">
-      <div>
-        <span class="section-tag light-tag">Choose Your CAMP21 Pathway</span>
-        <h2 class="section-title light-title">One hub, different access needs.</h2>
-        <p class="section-desc light-desc">Static first. Google Sheet + Apps Script will be connected after the website flow is finalised.</p>
-      </div>
-      <a class="btn btn-light" href="pages/contacts.html">Contact / Help Desk →</a>
-    </div>
-    <div class="role-path-grid role-path-grid-v9">
-      <a class="role-path-card role-dark-card" href="pages/participants.html"><span>01</span><h3>Participants</h3><p>Register, check team allocation, confirm with friends, view essentials and start the DT journey.</p><b>Open Participant Hub →</b></a>
-      <a class="role-path-card role-dark-card" href="pages/trainers.html"><span>02</span><h3>Pensyarah Pengiring</h3><p>Access facilitation notes, team movement, reminders and participant support information.</p><b>Open Trainer View →</b></a>
-      <a class="role-path-card role-dark-card" href="pages/trainers.html#facilitators"><span>03</span><h3>Speaker / Facilitators</h3><p>View session roles, materials, facilitation flow and important programme links.</p><b>Open Speaker View →</b></a>
-      <a class="role-path-card role-dark-card" href="pages/organiser.html"><span>04</span><h3>Organiser</h3><p>Monitor updates, contacts, logistics, team allocation and programme readiness.</p><b>Open Organiser View →</b></a>
-      <a class="role-path-card role-dark-card compact-role" href="pages/judges.html"><span>05</span><h3>Judges</h3><p>Access judging flow and finalist showcase information.</p><b>Open Judge View →</b></a>
-    </div>
-  </div>
-</section>
-
-<section class="section team-preview-section">
-  <div class="wide team-preview-grid">
-    <div class="team-preview-copy">
-      <span class="section-tag">Team Allocation</span>
-      <h2 class="section-title">10 teams × 6 participants</h2>
-      <p class="section-desc">The homepage only shows a quick preview. Participants will check full allocation in the Participant Hub and confirm with their friends before starting Smart DT tasks.</p>
-      <a class="btn btn-secondary" href="pages/participants.html">View Full Team Allocation →</a>
-    </div>
-    <div class="team-chip-board card">
-      <span>G01 Wau Warriors</span><span>G02 Batik Blaze</span><span>G03 Songket Sparks</span><span>G04 Keris Coders</span><span>G05 Canting Crew</span><span>G06 Tekat Titans</span><span>G07 Lakar Legends</span><span>G08 Anyam Alliance</span><span>G09 Rimba Rise</span><span>G10 Pusaka Pulse</span>
-    </div>
-  </div>
-</section>
-
 
 <!-- START HERE -->
 <section class="section start-section" id="start">
@@ -154,10 +106,10 @@
         <div class="journey-steps">
           <a class="step-card" href="https://shorturl.at/Mo98y" target="_blank" rel="noopener"><div class="step-number">1</div><div class="step-icon">📝</div><h3>Register</h3><p>Sign up and secure your participation.</p></a>
           <a class="step-card" href="https://t.me/+vTPGEFIaXMs5Mjhl" target="_blank" rel="noopener"><div class="step-number">2</div><div class="step-icon">📲</div><h3>Join Telegram</h3><p>Stay updated with reminders and announcements.</p></a>
-          <a class="step-card" href="pages/programme.html"><div class="step-number">3</div><div class="step-icon">📅</div><h3>Check Programme</h3><p>Review schedule, venue and key activities.</p></a>
-          <a class="step-card" href="pages/participants.html"><div class="step-number">4</div><div class="step-icon">📱</div><h3>Use SMART DT App</h3><p>Access templates, tools and resources.</p></a>
-          <a class="step-card" href="pages/dt-journey.html"><div class="step-number">5</div><div class="step-icon">🧩</div><h3>Complete DT Journey</h3><p>Empathise, Define, Ideate, Prototype and Test.</p></a>
-          <a class="step-card" href="pages/gallery-walk.html"><div class="step-number">6</div><div class="step-icon">🎤</div><h3>Pitch & Gallery Walk</h3><p>Present, inspire and celebrate impact.</p></a>
+          <a class="step-card" href="/Camp21-Synergising-Literacies-2026/pages/programme.html"><div class="step-number">3</div><div class="step-icon">📅</div><h3>Check Programme</h3><p>Review schedule, venue and key activities.</p></a>
+          <a class="step-card" href="/Camp21-Synergising-Literacies-2026/pages/participants.html"><div class="step-number">4</div><div class="step-icon">📱</div><h3>Use SMART DT App</h3><p>Access templates, tools and resources.</p></a>
+          <a class="step-card" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="step-number">5</div><div class="step-icon">🧩</div><h3>Complete DT Journey</h3><p>Empathise, Define, Ideate, Prototype and Test.</p></a>
+          <a class="step-card" href="/Camp21-Synergising-Literacies-2026/pages/gallery-walk.html"><div class="step-number">6</div><div class="step-icon">🎤</div><h3>Pitch & Gallery Walk</h3><p>Present, inspire and celebrate impact.</p></a>
         </div>
       </div>
     </div>
@@ -172,10 +124,10 @@
     <p class="section-desc">Camp21 brings together students, lecturers, judges and organisers who care about culture, creativity and future-ready innovation.</p>
 
     <div class="audience-grid">
-      <a class="audience-card card" href="pages/participants.html"><div class="audience-icon">🎓</div><h3>Students</h3><p>Politeknik Malaysia students ready to learn, collaborate and innovate through Design Thinking.</p></a>
-      <a class="audience-card card" href="pages/trainers.html"><div class="audience-icon">🧭</div><h3>Lecturers & Facilitators</h3><p>Guides who mentor and support teams through the Camp21 learning journey.</p></a>
-      <a class="audience-card card" href="pages/judges.html"><div class="audience-icon">🏅</div><h3>Judges</h3><p>Industry and academic experts who evaluate, inspire and celebrate student solutions.</p></a>
-      <a class="audience-card card" href="pages/organiser.html"><div class="audience-icon">👥</div><h3>Organisers</h3><p>The backbone team ensuring a meaningful, smooth and memorable experience.</p></a>
+      <a class="audience-card card" href="/Camp21-Synergising-Literacies-2026/pages/participants.html"><div class="audience-icon">🎓</div><h3>Students</h3><p>Politeknik Malaysia students ready to learn, collaborate and innovate through Design Thinking.</p></a>
+      <a class="audience-card card" href="/Camp21-Synergising-Literacies-2026/pages/trainers.html"><div class="audience-icon">🧭</div><h3>Lecturers & Facilitators</h3><p>Guides who mentor and support teams through the Camp21 learning journey.</p></a>
+      <a class="audience-card card" href="/Camp21-Synergising-Literacies-2026/pages/judges.html"><div class="audience-icon">🏅</div><h3>Judges</h3><p>Industry and academic experts who evaluate, inspire and celebrate student solutions.</p></a>
+      <a class="audience-card card" href="/Camp21-Synergising-Literacies-2026/pages/organiser.html"><div class="audience-icon">👥</div><h3>Organisers</h3><p>The backbone team ensuring a meaningful, smooth and memorable experience.</p></a>
     </div>
   </div>
 </section>
@@ -191,11 +143,11 @@
     </div>
 
     <div class="dt-steps">
-      <a class="dt-phase" href="pages/dt-journey.html"><div class="phase-icon phase-1">♡</div><h3>Empathise</h3><p>Understand people and cultural context.</p></a>
-      <a class="dt-phase" href="pages/dt-journey.html"><div class="phase-icon phase-2">⌕</div><h3>Define</h3><p>Frame the right challenge clearly.</p></a>
-      <a class="dt-phase" href="pages/dt-journey.html"><div class="phase-icon phase-3">✦</div><h3>Ideate</h3><p>Generate creative and inclusive ideas.</p></a>
-      <a class="dt-phase" href="pages/dt-journey.html"><div class="phase-icon phase-4">▣</div><h3>Prototype</h3><p>Build and iterate with intention.</p></a>
-      <a class="dt-phase" href="pages/dt-journey.html"><div class="phase-icon phase-5">✓</div><h3>Test</h3><p>Validate, learn and improve together.</p></a>
+      <a class="dt-phase" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="phase-icon phase-1">♡</div><h3>Empathise</h3><p>Understand people and cultural context.</p></a>
+      <a class="dt-phase" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="phase-icon phase-2">⌕</div><h3>Define</h3><p>Frame the right challenge clearly.</p></a>
+      <a class="dt-phase" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="phase-icon phase-3">✦</div><h3>Ideate</h3><p>Generate creative and inclusive ideas.</p></a>
+      <a class="dt-phase" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="phase-icon phase-4">▣</div><h3>Prototype</h3><p>Build and iterate with intention.</p></a>
+      <a class="dt-phase" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="phase-icon phase-5">✓</div><h3>Test</h3><p>Validate, learn and improve together.</p></a>
     </div>
   </div>
 </section>
@@ -208,11 +160,11 @@
     <p class="section-desc">These tools support the full Camp21 experience — from preparation to final pitching and gallery walk.</p>
 
     <div class="tools-grid">
-      <a class="tool-card card" href="pages/participants.html"><div class="tool-icon">📱</div><h3>SMART DT App</h3><p>Your all-in-one companion for templates, resources and submission support.</p><span class="tool-link">Open App →</span></a>
-      <a class="tool-card card" href="pages/dt-journey.html"><div class="tool-icon">📘</div><h3>T01–T16 Templates</h3><p>Structured worksheets to guide every step of your Design Thinking process.</p><span class="tool-link">View Templates →</span></a>
-      <a class="tool-card card" href="pages/participants.html"><div class="tool-icon">🎤</div><h3>Pitch Guide</h3><p>Craft your final presentation with storytelling, structure and confidence.</p><span class="tool-link">Read Guide →</span></a>
-      <a class="tool-card card" href="pages/contacts.html"><div class="tool-icon">💬</div><h3>Help Desk</h3><p>Need support? Get answers quickly from the Camp21 team.</p><span class="tool-link">Get Help →</span></a>
-      <a class="tool-card card" href="pages/gallery-walk.html"><div class="tool-icon">🖼️</div><h3>Gallery Walk</h3><p>Explore inspiring work, celebrate creativity and see student ideas in action.</p><span class="tool-link">Explore Gallery →</span></a>
+      <a class="tool-card card" href="/Camp21-Synergising-Literacies-2026/pages/participants.html"><div class="tool-icon">📱</div><h3>SMART DT App</h3><p>Your all-in-one companion for templates, resources and submission support.</p><span class="tool-link">Open App →</span></a>
+      <a class="tool-card card" href="/Camp21-Synergising-Literacies-2026/pages/dt-journey.html"><div class="tool-icon">📘</div><h3>T01–T16 Templates</h3><p>Structured worksheets to guide every step of your Design Thinking process.</p><span class="tool-link">View Templates →</span></a>
+      <a class="tool-card card" href="/Camp21-Synergising-Literacies-2026/pages/participants.html"><div class="tool-icon">🎤</div><h3>Pitch Guide</h3><p>Craft your final presentation with storytelling, structure and confidence.</p><span class="tool-link">Read Guide →</span></a>
+      <a class="tool-card card" href="/Camp21-Synergising-Literacies-2026/pages/contacts.html"><div class="tool-icon">💬</div><h3>Help Desk</h3><p>Need support? Get answers quickly from the Camp21 team.</p><span class="tool-link">Get Help →</span></a>
+      <a class="tool-card card" href="/Camp21-Synergising-Literacies-2026/pages/gallery-walk.html"><div class="tool-icon">🖼️</div><h3>Gallery Walk</h3><p>Explore inspiring work, celebrate creativity and see student ideas in action.</p><span class="tool-link">Explore Gallery →</span></a>
     </div>
   </div>
 </section>
@@ -224,7 +176,7 @@
       <span class="section-tag">Programme Highlights</span>
       <h2 class="section-title">4 days of <span class="accent">creative impact</span></h2>
       <p class="section-desc">A guided journey of cultural discovery, ideation, prototyping, pitching and celebration.</p>
-      <a class="btn btn-secondary" style="margin-top:22px" href="pages/programme.html">View Full Schedule →</a>
+      <a class="btn btn-secondary" style="margin-top:22px" href="/Camp21-Synergising-Literacies-2026/pages/programme.html">View Full Schedule →</a>
     </div>
 
     <div class="day-grid">
@@ -272,19 +224,19 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="#about">About Camp21</a>
-        <a href="pages/programme.html">Programme</a>
+        <a href="/Camp21-Synergising-Literacies-2026/pages/programme.html">Programme</a>
         <a href="#tools">Tools & Resources</a>
-        <a href="pages/participants.html">For Participants</a>
-        <a href="pages/gallery-walk.html">Gallery</a>
-        <a href="pages/contacts.html">FAQ / Contact</a>
+        <a href="/Camp21-Synergising-Literacies-2026/pages/participants.html">For Participants</a>
+        <a href="/Camp21-Synergising-Literacies-2026/pages/gallery-walk.html">Gallery</a>
+        <a href="/Camp21-Synergising-Literacies-2026/pages/contacts.html">FAQ / Contact</a>
       </div>
 
       <div class="footer-col">
-        <h4>Contact / Help Desk</h4>
-        <p><strong>General Info:</strong> Pn Jasmine / Pn Radhiah</p>
-        <p><strong>Registration:</strong> Pn Herlina</p>
-        <p><strong>Accommodation:</strong> Ustaz Alif</p>
-        <a class="btn btn-secondary btn-small" href="pages/contacts.html">View Full Help Desk</a>
+        <h4>Need Help?</h4>
+        <p>helpdesk@camp21.my</p>
+        <p>+603 1234 5678</p>
+        <p>Mon – Fri | 9.00AM – 6.00PM</p>
+        <a class="btn btn-secondary btn-small" href="/Camp21-Synergising-Literacies-2026/pages/contacts.html">Visit Help Desk</a>
       </div>
 
       <div class="footer-col">
@@ -297,10 +249,10 @@
       <div class="footer-col footer-org-col">
         <h4>Organised By</h4>
         <div class="footer-logos-standardized">
-          <div class="logo-card"><img src="assets/logo/logo-kpt-jppkk.png" alt="KPT JPPKK"></div>
-          <div class="logo-card"><img src="assets/logo/logo-polycc.png" alt="POLYCC"></div>
-          <div class="logo-card"><img src="assets/logo/logo-politeknik-metro.png" alt="Politeknik METrO Kuala Lumpur"></div>
-          <div class="logo-card"><img src="assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf Kuala Lumpur"></div>
+          <div class="logo-card"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kpt-jppkk.png" alt="KPT JPPKK"></div>
+          <div class="logo-card"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-polycc.png" alt="POLYCC"></div>
+          <div class="logo-card"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-politeknik-metro.png" alt="Politeknik METrO Kuala Lumpur"></div>
+          <div class="logo-card"><img src="/Camp21-Synergising-Literacies-2026/assets/logo/logo-kompleks-kraf.png" alt="Kompleks Kraf Kuala Lumpur"></div>
         </div>
       </div>
     </div>
