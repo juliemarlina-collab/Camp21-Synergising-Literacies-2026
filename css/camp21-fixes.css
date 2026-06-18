@@ -682,3 +682,79 @@
   .v11-hero-copy .btn-primary,.v11-outline{width:100% !important;}
   .v11-hero-stat{position:static !important;margin-top:12px !important;min-width:0 !important;text-align:left !important;}
 }
+
+
+/* =========================================================
+   V12 HERO BACKGROUND HARD FIX
+   Purpose: make the golden heritage background visible even if
+   older hero overlays or GitHub Pages path issues interfere.
+   This does NOT change the colour identity.
+   ========================================================= */
+.hero-section.v11-hero-section{
+  isolation:isolate !important;
+  position:relative !important;
+  background-color:#fffaf5 !important;
+  background-image:
+    linear-gradient(90deg,rgba(255,255,255,.78) 0%,rgba(255,252,247,.60) 48%,rgba(255,239,218,.62) 100%),
+    radial-gradient(circle at 3% 82%,rgba(255,142,46,.22),transparent 28%),
+    radial-gradient(circle at 92% 8%,rgba(255,185,79,.22),transparent 26%),
+    url('../assets/backgrounds/hero-golden-heritage-bg.png') !important;
+  background-repeat:no-repeat,no-repeat,no-repeat,no-repeat !important;
+  background-size:cover,cover,cover,cover !important;
+  background-position:center,center,center,center !important;
+}
+.hero-section.v11-hero-section::before,
+.hero-section.v11-hero-section::after{
+  display:none !important;
+  opacity:0 !important;
+  background:none !important;
+  content:none !important;
+}
+.hero-bg-golden{
+  display:block !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:-1 !important;
+  opacity:1 !important;
+  background-color:#fffaf5 !important;
+  background-image:
+    linear-gradient(90deg,rgba(255,255,255,.62),rgba(255,248,238,.42)),
+    radial-gradient(circle at 7% 88%,rgba(255,136,36,.18),transparent 30%),
+    radial-gradient(circle at 92% 12%,rgba(255,197,92,.20),transparent 30%),
+    url('../assets/backgrounds/hero-golden-heritage-bg.png') !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center !important;
+  pointer-events:none !important;
+}
+/* Golden motif fallback if the PNG path is accidentally not uploaded */
+.hero-section.v11-hero-section .v11-hero-grid::before,
+.hero-section.v11-hero-section .v11-hero-grid::after{
+  content:"" !important;
+  position:absolute !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  opacity:.42 !important;
+  background-repeat:no-repeat !important;
+  background-size:contain !important;
+  filter:drop-shadow(0 18px 28px rgba(255,153,46,.10)) !important;
+}
+.hero-section.v11-hero-section .v11-hero-grid::before{
+  left:-90px !important;
+  bottom:-96px !important;
+  width:360px !important;
+  height:360px !important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cg fill='none' stroke='%23f6a33f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' opacity='.85'%3E%3Cpath d='M70 420 C140 310,130 180,250 80 C215 170,265 245,210 330 C170 390,110 410,70 420Z'/%3E%3Cpath d='M95 402 C180 340,190 210,248 92'/%3E%3Cpath d='M140 350 C95 315,75 270,82 215 C130 260,150 310,140 350Z'/%3E%3Cpath d='M190 260 C145 215,132 160,155 110 C200 160,215 220,190 260Z'/%3E%3Cpath d='M260 88 C330 110,388 160,420 230 C342 214,288 165,260 88Z'/%3E%3Cpath d='M230 330 C320 320,390 360,445 425 C350 430,280 390,230 330Z'/%3E%3Cpath d='M88 425 C150 400,220 390,310 410'/%3E%3Ccircle cx='82' cy='205' r='8'/%3E%3Ccircle cx='420' cy='232' r='8'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+.hero-section.v11-hero-section .v11-hero-grid::after{
+  right:-70px !important;
+  top:12px !important;
+  width:330px !important;
+  height:260px !important;
+  opacity:.34 !important;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 360'%3E%3Cg fill='none' stroke='%23f6a33f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M65 182 C160 88,300 62,520 160 C350 205,210 248,65 182Z'/%3E%3Cpath d='M110 178 C220 145,333 142,492 160'/%3E%3Cpath d='M238 105 C278 150,280 194,245 235'/%3E%3Cpath d='M365 122 C397 150,402 184,380 211'/%3E%3Cpath d='M65 182 C72 245,112 290,175 312'/%3E%3Cpath d='M520 160 C555 116,556 82,532 48'/%3E%3Cpath d='M170 306 C220 292,260 270,292 235'/%3E%3Cpath d='M532 50 C500 76,472 108,452 147'/%3E%3Ccircle cx='115' cy='180' r='8'/%3E%3Ccircle cx='470' cy='162' r='8'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+@media(max-width:760px){
+  .hero-section.v11-hero-section .v11-hero-grid::before{width:240px !important;height:240px !important;left:-80px !important;bottom:-70px !important;opacity:.28 !important;}
+  .hero-section.v11-hero-section .v11-hero-grid::after{width:220px !important;height:180px !important;right:-70px !important;top:30px !important;opacity:.22 !important;}
+}
